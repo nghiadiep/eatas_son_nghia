@@ -1,0 +1,21 @@
+/* ALIGNMENT */
+$positions: ('left', 'center', 'right');
+$thicknesses: ('lighter', 'normal', 'bold', 'bolder');
+$font-prefix: 'text';
+@each $position in $positions {
+    .#{$font-prefix}-#{$position} {
+        text-align: #{$position};
+        &-ipt {
+            text-align: #{$position} !important;
+        }
+    }
+}
+
+@each $thickness in $thicknesses {
+    .#{$font-prefix}-#{$thickness} {
+        font-weight: #{$thickness};
+        &-ipt {
+            font-weight: #{$thickness} !important;
+        }
+    }
+}

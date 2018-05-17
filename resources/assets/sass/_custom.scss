@@ -1,0 +1,37 @@
+@media (min-width: $breakpoint-small) {
+    .uk-height-small\@s {
+        height: $height-small-height !important;
+    }
+    .uk-height-medium\@s {
+        height: $height-medium-height !important;
+    }
+    .uk-height-large\@s {
+        height: $height-large-height !important;
+    }
+}
+
+
+@media (min-width: $breakpoint-medium) {
+    .uk-height-small\@m {
+        height: $height-small-height !important;
+    }
+    .uk-height-medium\@m {
+        height: $height-medium-height !important;
+    }
+    .uk-height-large\@m {
+        height: $height-large-height !important;
+    }
+}
+
+
+@media (min-width: $breakpoint-large) {
+    .uk-height-small\@l {
+        height: $height-small-height !important;
+    }
+    .uk-height-medium\@l {
+        height: $height-medium-height !important;
+    }
+    .uk-height-large\@l {
+        height: $height-large-height !important;
+    }
+}

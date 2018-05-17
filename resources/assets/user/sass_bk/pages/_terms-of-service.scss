@@ -1,0 +1,55 @@
+/* Term of Service */
+.block-terms-service {
+	&__notice {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+.block--list__number {
+	&_level0 {
+		margin-bottom: 10px;
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		& .num,
+		& .txt {
+			float: left;
+		}
+		& .num {
+			float: left;
+		    width: 15px;
+		    margin-right: 12px;
+		    font-weight: bold;
+		}
+		& .txt {
+			float: left;
+    		width: calc(100% - 27px);
+		}
+	}
+	&_level1 {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	&_submenu {
+		margin: 10px 0;
+	}
+}

@@ -1,0 +1,266 @@
+.sidebar {
+    &__box {
+        margin-bottom: 19px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-menu {
+        ul>li {
+            display: block;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #e1e7eb;
+            background: #f1f5f8;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            &:after {
+                content: "\f105";
+                font-size: 24px;
+                font-family: "FontAwesome";
+                display: block;
+                position: absolute;
+                right: 14px;
+                top: 50%;
+                margin-top: -14px;
+                color: $darkBlue;
+            }
+            &:hover {
+                background: rgba(#f1f5f8, 0.6);
+            }
+            button {
+                font-size: 18px;
+                font-weight: bold;
+                padding: 28px 14px 25px;
+            }
+            >a {
+                display: block;
+                position: relative;
+                padding: 28px 14px 25px;
+                cursor: pointer;
+            }
+        }
+    }
+    /***END MENU***/
+    /***BUTTON REGISTER***/
+    .btn-register {
+        display: block;
+        background: $darkBlue;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 17px 10px 13px;
+        &:hover {
+            background: rgba($darkBlue, 0.6);
+        }
+        >span {
+            display: inline-block;
+            position: relative;
+            &:before {
+                content: "";
+                position: relative;
+                top: -3px;
+                display: inline-block;
+                width: 24px;
+                height: 22px;
+                background: url(../images/icon_key.png) no-repeat center center;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            &:after {
+                position: relative;
+                top: -2px;
+                margin-left: 10px;
+                content: "\f101";
+                display: inline-block;
+                vertical-align: middle;
+                font-family: $font-awesome;
+            }
+        }
+    }
+    /***END BUTTON REGISTER***/
+    /***USAGE***/
+    &-usage {
+        >a {
+            display: block;
+        }
+    }
+    /***BANNER ADS***/
+    &-ads {
+        ul>li {
+            margin-bottom: 19px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    /***.sidebar-register***/
+    .sidebar-register {
+        background: $yellow;
+        padding: 10px 10px 14px;
+        margin-top: 10px;
+        &__title {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            border-bottom: 1px solid #AE9C18;
+            padding-top: 10px;
+            padding-bottom: 14px;
+            >span {
+                display: inline-block;
+                &:after,
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    font-family: $font-awesome;
+                    font-size: 22px;
+                    vertical-align: middle;
+                    position: relative;
+                    top: -2px;
+                }
+                &:before {
+                    content: "";
+                    width: 28px;
+                    height: 16px;
+                    margin-right: 8px;
+                    background: url(../images/icon_register02.png) no-repeat center center;
+                }
+                &:after {
+                    margin-left: -4px;
+                    content: "\f101";
+                }
+            }
+        }
+        &__body {
+            text-align: center;
+            padding-top: 16px;
+            ul {
+                display: inline-block;
+                >li {
+                    display: block;
+                    text-align: left;
+                    font-size: 13px;
+                    margin-bottom: 8px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        position: relative;
+                        padding-left: 10px;
+                        &:before {
+                            content: "\f0da";
+                            font-family: $font-awesome;
+                            position: absolute;
+                            left: 0;
+                            top: 2px;
+                            font-size: 13px;
+                        }
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***USEAGE EATAS***/
+    .sidebar-usage-eatas {
+        text-align: center;
+        &__title {
+            font-size: 16px;
+            border-bottom: 1px solid #b29b17;
+            font-weight: bold;
+            padding-top: 16px;
+            padding-bottom: 14px;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+        &__txt {
+            font-size: 13px;
+        }
+        a {
+            background: $yellow;
+            display: block;
+            padding-bottom: 14px;
+            padding-left: 30%;
+            padding-right: 10px;
+            position: relative;
+            &:hover {
+                background: rgba($yellow, 0.6);
+                &:before {
+                    content: "";
+                }
+            }
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                height: 100%;
+                background-color: $yellow;
+            }
+            &:before {
+                content: "";
+                left: 0;
+                width: 30%;
+                background: url(../images/usage_eatas_pc.png) no-repeat center center;
+                @include background-size(auto auto);
+            }
+            >span {
+                display: block;
+            }
+        }
+    }
+    /***END USAGE EATAS***/
+    /***POINT***/
+    .sidebar-point {
+        font-size: 12px;
+        line-height: 21px;
+        &__header {
+            margin-bottom: 4px;
+        }
+        &__button {
+            a {
+                &:before {
+                    content: "\f101";
+                    display: inline-block;
+                    font-family: "FontAwesome";
+                    margin-right: 2px;
+                }
+                padding: 4px 14px;
+                display: inline-block;
+                line-height: 1;
+                background: #9FA0A0;
+                color: #fff;
+                @include border-radius(3px);
+                &:hover {
+                    background: rgba(#9FA0A0, 0.8);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .sidebar .sidebar-register__title {
+        font-size: get-vw(960, 20);
+    }
+    .sidebar .btn-register {
+        font-size: get-vw(960, 20);
+    }
+    .sidebar .sidebar-usage-eatas__title {
+        font-size: get-vw(960, 16);
+    }
+    .sidebar .sidebar-usage-eatas a>span {
+        font-size: get-vw(960, 13);
+    }
+    .sidebar .sidebar-usage-eatas a:before {
+        -webkit-background-size: 100%;
+        -ms-background-size: 100%;
+        -moz-background-size: 100%;
+        background-size: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+$global-primary-background: #F4AF0A;
+$global-hiprimary-background: #E80202;
+$lighten-primary-color: #F6F6F6;
+$lighten-primary-background: #C5F1CA;
+
+
+$navbar-nav-item-height: 56px !default;
+
+$global-medium-box-shadow: 0px 0px 2px 1px #F0F0F0;
+// $global-small-box-shadow: 0 2px 8px rgba(0,0,0,0.08) !default;
+$global-large-box-shadow: 0 14px 25px rgba(0,0,0,0.16);
+$global-xlarge-box-shadow: 0 28px 50px rgba(0,0,0,0.16);
+
+$global-xxlarge-font-size: 1.5rem;
+$global-xlarge-font-size: 1.25rem;
+$global-large-font-size: 1.125rem;
+$global-medium-font-size: 1.0rem;
+$global-font-size: 16px;
+$global-small-font-size: 0.875rem;
+
+$global-xlarge-margin: 128px;
+$global-large-margin: 64px;
+$global-medium-margin: 32px;
+$global-margin: 16px;
+$global-small-margin: 8px ;
+
+$global-large-gutter: 48px;
+$global-medium-gutter: 30px;
+$global-gutter: 24px;
+$global-small-gutter: 12px;
+
+
+$overlay-padding-horizontal: $global-small-gutter;
+$overlay-padding-vertical: $global-small-gutter;

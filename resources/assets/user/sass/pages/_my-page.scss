@@ -1,0 +1,59 @@
+.my-page{
+
+    &.main__content {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: -42px;
+        
+        .block-mypage{
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+    }
+
+    .page-title{
+        margin-bottom:0;
+    }
+    .block-mypage{
+        &__menu li {
+            @extend %inline-block;
+            background: #f1f5f8;
+            border-top:1px solid #ffffff;
+            border-bottom: 1px solid #e1e7eb;
+            position: relative;
+            padding:0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a,button {
+                padding: 15px 10px 11px;
+                position: relative;
+                top:0;
+                display: block; 
+                line-height: 18px;
+                color: #001925;
+                text-align: left;
+                font-size: 100%;
+                width: 100%;
+
+                &:after {
+                    content: "\f105";
+                    font-family: "FontAwesome";
+                    font-size: 29px;
+                    position: absolute;
+                    top: 50%;
+                    right: 5px;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            button {
+                font-size: 110%;
+            }
+        }
+
+    }
+}

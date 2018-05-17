@@ -1,0 +1,341 @@
+.btn{
+    font-weight: bold;
+    padding:14px 10px 12px;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    min-height: 45px;
+    letter-spacing: 2px;
+    @include border-radius(3px);
+    &--block{
+        display: block;
+        width: 100%;
+    }
+    &--default{
+        font-size: 15px;
+        background-color: #eff4f7;
+        -ms-box-shadow: inset 0 0 0 2px #fff;
+        -webkit-box-shadow: inset 0 0 0 2px #fff;
+        -moz-box-shadow: inset 0 0 0 2px #fff;
+        box-shadow: inset 0 0 0 2px #fff;
+        border: solid 2px $darkBlue;
+        margin:0;
+    }
+    &--black{
+        margin:0;
+        background: $darkBlue;
+        color:#fff;
+        &--off{
+         margin:0;
+          background: #bfc5c8;  
+        }
+    }
+    &--off{
+        background: #bfc5c8;
+        color:#fff;
+    }
+    &--on{
+        background: $darkBlue;
+        color:#fff;
+    }
+    &--yellow{
+        padding-top: 17px;
+        color: $darkBlue;
+        -ms-text-shadow: 0 1px #fff;
+        -moz-text-shadow: 0 1px #fff;
+        -webkit-text-shadow: 0 1px #fff;
+        text-shadow: 0 1px #fff;
+        background-color: #fbe43c;
+        -ms-box-shadow: 0 1px #d8c328, inset 0 1px rgba(255,255,255,.75);
+	-webkit-box-shadow: 0 1px #d8c328, inset 0 1px rgba(255,255,255,.75);
+	-moz-box-shadow: 0 1px #d8c328, inset 0 1px rgba(255,255,255,.75);
+	box-shadow: 0 1px #d8c328, inset 0 1px rgba(255,255,255,.75);
+    }
+    &--gray{
+        color: $darkBlue;
+        background-color: #eff4f7;
+        -ms-box-shadow: 0 1px rgba(0,25,37,.25);
+        -webkit-box-shadow: 0 1px rgba(0,25,37,.25);
+        -moz-box-shadow: 0 1px rgba(0,25,37,.25);
+        box-shadow: 0 1px rgba(0,25,37,.25);
+    }
+    &--gray__2 {
+        color: $darkBlue;
+        background-color: #eff4f7;
+        -ms-box-shadow: inset 0 1px rgba(0, 25, 37, 0.25);
+        -webkit-box-shadow: inset 0 1px rgba(0, 25, 37, 0.25);
+        -moz-box-shadow: inset 0 1px rgba(0, 25, 37, 0.25);
+        box-shadow: inset 0 1px rgba(0, 25, 37, 0.25);
+    }
+    &--blue {
+        @include border-radius(3px);
+        color: #fff;
+        -ms-text-shadow: 0 1px #fff;
+        -moz-text-shadow: 0 1px #fff;
+        -webkit-text-shadow: 0 1px #fff;
+        background-color: #80bc42;
+        -ms-box-shadow: 0 1px #87d636, inset 0 1px rgba(255,255,255,.75);
+        -webkit-box-shadow: 0 1px #87d636, inset 0 1px rgba(255,255,255,.75);
+        -moz-box-shadow: 0 1px #87d636, inset 0 1px rgba(255,255,255,.75);
+        box-shadow: 0 1px #87d636, inset 0 1px rgba(255,255,255,.75);
+    }
+    &--blue-w-text-shadow {
+        @include border-radius(3px);
+        color: #fff;
+        -ms-text-shadow: 0px 1px 0px #137691, 0px 2px 0px #137691;
+        -moz-text-shadow: 0px 1px 0px #137691, 0px 2px 0px #137691;
+        --webkit-text-shadow: 0px 1px 0px #137691, 0px 2px 0px #137691;
+        text-shadow: 0px 1px 0px #137691, 0px 2px 0px #137691;
+        background-color: $lightBlue;
+        -ms-box-shadow: 0 2px #137691;
+        -webkit-box-shadow: 0 2px #137691;
+        -moz-box-shadow: 0 2px #137691;
+        box-shadow: 0 2px #137691;
+    }
+    &--border_blue {
+        margin: 10px 0;
+        border: 1px solid #9ad35e;
+        -ms-box-shadow: 0 1px #639d27, inset 0 1px rgba(255,255,255,.75);
+        -webkit-box-shadow: 0 1px #639d27, inset 0 1px rgba(255,255,255,.75);
+        -moz-box-shadow: 0 1px #639d27, inset 0 1px rgba(255,255,255,.75);
+        box-shadow: 0 1px #639d27, inset 0 1px rgba(255,255,255,.75);
+    }
+    &--pink {
+        @include border-radius(3px);
+        color: #fff;
+        -ms-text-shadow: 0 1px #fff;
+        -moz-text-shadow: 0 1px #fff;
+        -webkit-text-shadow: 0 1px #fff;
+        background-color: #f04b6b;
+        -ms-box-shadow: 0 1px #f13357, inset 0 1px rgba(255,255,255,.75);
+        -webkit-box-shadow: 0 1px #f13357, inset 0 1px rgba(255,255,255,.75);
+        -moz-box-shadow: 0 1px #f13357, inset 0 1px rgba(255,255,255,.75);
+        box-shadow: 0 1px #f13357, inset 0 1px rgba(255,255,255,.75);
+    }
+    &--border_pink {
+        margin: 10px 0;
+        border: 1px solid #ff7f98;
+        -ms-box-shadow: 0 1px #c52e4b, inset 0 1px rgba(255,255,255,.75);
+        -webkit-box-shadow: 0 1px #c52e4b, inset 0 1px rgba(255,255,255,.75);
+        -moz-box-shadow: 0 1px #c52e4b, inset 0 1px rgba(255,255,255,.75);
+        box-shadow: 0 1px #c52e4b, inset 0 1px rgba(255,255,255,.75);
+    }
+    &--border_gray {
+        margin: 10px 0;
+        border: 1px solid #ecf2f5;
+        -ms-box-shadow: 0 1px #d2dce2, inset 0 1px rgba(255,255,255,.75);
+        -webkit-box-shadow: 0 1px #d2dce2, inset 0 1px rgba(255,255,255,.75);
+        -moz-box-shadow: 0 1px #d2dce2, inset 0 1px rgba(255,255,255,.75);
+        box-shadow: 0 1px #d2dce2, inset 0 1px rgba(255,255,255,.75);
+    }
+}
+
+/* Button 2 Col */
+.row-btn {
+    margin-right: -6px;
+    margin-left: -6px;
+    &__pull-left {
+       float: left;
+       width: 50%;
+       padding: 6px;
+    }
+    &__pull-right {
+       float: left;
+       width: 50%;
+       padding: 6px;
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/* Row text vertical middle */
+.list-inline {
+    display: table;
+    width: 100%;
+    &>* {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+/* Button checkbox group */
+.btn-checkbox-group {
+    padding-top: 0px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 12px;
+    &__bottom {
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        &::before,&::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            left:0;
+        }
+        &::before {
+            top: -3px;
+            background: #d2dce2;
+        }
+        &::after {
+            top: -2px;
+            background: #ecf2f5;
+        }
+    }
+    
+    &--off {
+        background-color: #eff4f7;
+    }
+}
+
+.btn-checkbox-group {
+    margin-bottom: 1px;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 12px;
+    .checkbox-group,
+    .btn{
+        cursor:unset;
+    }
+    .checkbox-group > label {
+        & > span {
+            display: inline-block;
+            text-align: left;
+            font-weight: bold;
+            padding: 0 0 0 25px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background: none;
+            min-height: inherit;
+            &::before {
+                left: 0;
+            }
+        }
+    }
+    & .btn {
+        $btnRH: &;
+        padding-top: 10px;
+        margin-top: 0;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & span {
+            display: inline-block;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+        &__head {
+            text-align: left;
+            line-height: 18px;
+            padding-bottom: 9px;
+            font-size: 12px;
+        }
+        &__bottom {
+            $btnBttm: &;
+            font-size: 12px;
+            padding-top: 10px;
+            font-weight: bold;
+            position: relative;
+            &::before,&::after{
+                content: "";
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                left:0;
+            }
+            &::before{
+                top:-3px;
+                background: #d2dce2;
+            }
+            &::after{
+                top:-2px;
+                background: #ecf2f5;
+            }
+            a{
+                color: #fff;
+                font-size: 12px;
+                font-weight: normal;
+                letter-spacing: 1px;
+            }
+        }
+        &--blue{
+            background-color: $lightBlue;
+            -webkit-box-shadow: 0 1px $lightBlue, inset 0 1px #0d6f89;
+            -moz-box-shadow: 0 1px $lightBlue, inset 0 1px #0d6f89;
+            -ms-box-shadow:0 1px $lightBlue, inset 0 1px #0d6f89;
+            box-shadow: 0 1px $lightBlue, inset 0 1px #0d6f89;
+            .btn__head {
+                & label span {
+                    color: #fff;
+                }
+            }
+            .btn__bottom{
+                @include text-shadow(0 1px #0d6f89);
+            }
+            .btn__bottom{
+                &::before{
+                    top:-3px;
+                    background: #0d6f89;
+                }
+                &::after{
+                    top:-2px;
+                    background: #78daf5;
+                }
+            }
+        }
+        &--gray{
+            background: #eff4f7;
+            .btn__bottom{
+                @include text-shadow(0 1px #ffffff);
+                &::before{
+                    top:-3px;
+                    background: #d2dce2;
+                }
+                &::after{
+                    top:-2px;
+                    background: #ecf2f5;
+                }
+                a{
+                    color:$darkBlue;
+                }
+            }
+        }
+    }
+}
+
+a.btn {
+    padding-top: 16px;
+}
+
+@media (min-width: 767px){
+    button{
+        cursor: pointer;
+    }
+    .btn{
+        display: inline-block;
+        font-size: 18px;
+        width: auto;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        &--default{
+            &:hover{
+                background: $darkBlue;
+                color: #fff;
+            }
+        }
+    }
+}

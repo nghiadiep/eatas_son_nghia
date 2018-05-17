@@ -1,0 +1,283 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+// @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// 2. Import default variables and available mixins.
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+
+@import "custom";
+
+// 4. Import UIkit.
+@import "~uikit/src/scss/uikit-theme.scss";
+
+div.tagsinput span.tag {
+    background-color: $global-primary-background;
+    border-color: $global-primary-background;
+    color: white;
+
+    & > a {
+        color: white;
+    }
+}
+
+.top-slider-items {
+    max-height: 62vw;
+}
+
+.base{
+    min-height: 85vh;
+}
+
+.uk-slideshow-items{
+    max-height: 60vh;
+}
+
+.uk-button {
+    text-transform: none;
+}
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+    z-index: 15;
+}
+
+.ql-custom {
+    position:relative;
+    
+    &:after{
+        content: "三";
+        font-size: 18px;
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        right: 0px;
+        margin: auto;    
+    }
+}
+
+.image-wrapper{
+    position: relative;
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.image-contain{
+    position: relative;
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+img.selected {
+    border: 4px solid $global-primary-background;
+}
+
+.facebook {
+    background-color: #3b5998;
+    &:hover{
+        background-color: #3b5998;            
+    }
+}
+
+.twitter {
+    background-color: #00aced;
+    &:hover{
+        background-color: #00aced;            
+    }
+}
+
+.line {
+    background-color: #00C600;
+    &:hover{
+        background-color: #00C600;            
+    }
+}
+
+.google-plus {
+    background-color: #F00000;
+    &:hover{
+        background-color: #F00000;
+    }
+}
+
+.hatebu {
+    background-color: #2667C0;
+    &:hover{
+        background-color: #2667C0;            
+    }
+}
+
+.google_plus {
+    background-color: #EC2D30;
+    &:hover{
+        background-color: #EC2D30;            
+    }
+}
+
+
+.yahoo {
+    background-color: #FF0000;
+    &:hover{
+        background-color: #FF0000;            
+    }
+}
+
+.order_asc:after {
+    content: "▲";
+}
+
+.order_desc:after {
+    content: "▼";    
+}
+
+article.article {
+
+    & .article-title{
+        position: relative;
+        color: #fff;
+        background: lighten($global-primary-background, 5%);
+        margin: 0 -10px 30px -10px;
+        padding: 16px 24px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+        &:before,&:after{
+            position: absolute;
+            top: 100%;
+            content: "";
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-top: 5px solid #000;
+            opacity: 0.5;
+        }
+        &:before{
+            left: 0;
+            border-right: 5px solid #000;        
+        }
+        &:after{
+            right: 0;
+            border-left: 5px solid #000;            
+        }
+    }
+
+    & .article-summary {
+        background: $lighten-primary-color;
+        padding: $global-small-gutter;
+    }
+}
+
+section.product{
+    padding: 3em 3em;
+    margin: 2em 0;
+    background: $lighten-primary-color;
+    border: dashed 2px $global-primary-background;
+
+}
+
+.uk-button-muted{
+    background-color: $global-muted-background;
+    border: 1px solid $global-muted-background;
+}
+
+.tab-wrap{
+    position:relative;
+    height: 35px;
+    overflow: hidden;
+}
+
+.tab-previous,
+.tab-next {
+    position:absolute;
+    width: 32px;
+    height: 100%;
+}
+
+.tab-previous {
+    left:0px;
+}
+
+.tab-next {
+    right:0px;
+}
+
+.tab-base{
+
+    display: inline-block;
+    width: calc(100% - 64px);
+    left: 32px;
+    height: 48px;
+    vertical-align: middle;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    border-bottom: 1px solid $lighten-primary-color;
+
+    & > .tab-list {
+
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left:20px;
+        min-width: 100%;
+        justify-content: space-between;
+
+        &::before{
+            border-bottom: 0px;    
+        }
+
+        & > .tab-item {
+            width: auto;
+            padding-left: 0px;
+
+            & > a {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+
+    }
+
+    & .uk-active > a {
+        background-color: $global-primary-background;
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+.text-overflow{
+    overflow: hidden;
+    height: 1.4em;
+    &.line-2 {
+        height: 2.8em;
+    }
+    &.line-3 {
+        height: 4.2em;
+    }
+    &.line-4 {
+        height: 5.6em;
+    }
+}
+
+article.uk-card {
+    height: 100%;
+}
+
+@media (min-width: 1400px) {
+    .uk-width-1-3\@xl {
+        width: calc(100% * 1 / 3.001);
+    }
+}
+
+@import "../user/sass/helpers/_variables.scss";
+@import "../user/sass/helpers/_mixin.scss";
+@import "../user/sass/pages/_notes-detailed.scss";

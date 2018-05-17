@@ -1,0 +1,55 @@
+@charset "utf-8";
+.block-error-page{
+    padding:25px 0 10px;
+    &--maintenance{
+        img{
+            width: 300px;
+        }
+    }
+    &--504{
+        img{
+            width: 260px;
+        }
+    }
+    &--503{
+        img{
+            width: 260px;
+        }
+    }
+    &--500{
+        img{
+            width: 260px;
+        }
+    }
+    &--400{
+        padding-bottom: 25px;
+        img{
+            width: 262px;
+        }
+    }
+    &--403{
+        padding-bottom: 25px;
+        img{
+            width: 260px;
+        }
+    }
+    &--404{
+        padding-bottom: 25px;
+        img{
+            width: 260px;
+        }
+    }
+    &__des{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    &__note{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        p{
+            display: inline-block;
+            text-align: left;
+        }
+    }
+}

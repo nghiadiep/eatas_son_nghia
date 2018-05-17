@@ -1,0 +1,1 @@
+<img class="uk-height-1-1" src="{{asset('images/logo_sp.png')}}" alt="EATAS">

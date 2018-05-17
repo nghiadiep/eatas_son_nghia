@@ -1,0 +1,4 @@
+@function get-vw($width,$object) {
+    $vw: ($width * 0.01) * 1;
+    @return ($object / $vw) * 1vw;
+}

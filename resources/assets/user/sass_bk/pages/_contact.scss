@@ -1,0 +1,125 @@
+@charset "utf-8";
+.block-contact {
+    a{
+        text-decoration: underline;
+    }
+    &__notice {
+        padding: 0 0 13px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    &__message {
+        background-color: $blueGrey;
+        padding: 12px 10px 9px;
+        margin-bottom: 18px;
+        p {
+            font-size: 12px;
+        }
+        ul {
+            padding: 8px 5px 0 5px;
+            font-size: 10px;
+        }
+        li {
+            display: block;
+            line-height: 14px;
+            margin-bottom: 7px;
+            padding-left: 12px;
+            position: relative;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        li::before {
+            content: "";
+            color: $yellow;
+            display: block; 
+            position: absolute;
+            left: 0;
+            top: 2px;
+            background: $yellow;
+            width: 6px;
+            height: 6px;
+            @include border-radius(6px);
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+
+        span {
+            display: inline-block;
+            background-color: #ffffff;
+            position: relative;
+            padding: 0 11px;
+            z-index: 99;
+        }
+
+        &:before {
+            content: "";
+            background-color: #000000;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: 35%;
+            left: 0;
+        }
+
+        &:after {
+            content: "";
+            background-color: #000000;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: 35%;
+            right: 0;
+        }
+    }
+
+    &__confirm {
+        font-size: 12px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    &__form{
+        &__btn-list{
+            margin-top: 6px;
+            >ul>li{
+                display: block;
+                margin-bottom: 12px;
+            }
+            .btn{
+                font-weight: normal;
+            }
+        }
+        &__btn-bottom{
+          margin-top: 22px;  
+        }
+    }
+}
+.mb18 {
+    margin-bottom: 18px;
+}
+.contact-page{
+    .block-alert{
+       margin-top: -7px; 
+       margin-bottom: 20px;
+    }
+    .block-form__sec {
+        /* padding-bottom: 2px;*/
+    }
+    .form-group{
+        /* margin-bottom: 27px;*/
+    }
+    .block-form {
+        &__message {
+            line-height: 18px;
+        }
+    }
+    textarea.form-control{
+        font-family: メイリオ, Meiryo;
+    }
+}

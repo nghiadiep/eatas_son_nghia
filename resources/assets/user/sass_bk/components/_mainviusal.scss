@@ -1,0 +1,100 @@
+.mainvisual{
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 6px;
+    &__slider-main{
+        &__item{
+            position:relative;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            color:#fff;
+            -webkit-background-size:cover;
+            -ms-background-size:cover;
+            -moz-background-size:cover;
+            background-size:cover;
+
+            &__window {
+                max-width: 100%;
+                width: 100%;
+                height: 62.5vw;
+                max-height: 468px;
+                overflow: hidden;
+                position:relative;
+                & > img{
+                    top: -100%;
+                    bottom: -100%;
+                    width: 100%;
+                    margin: auto;
+                    position:absolute;
+                }
+            }
+            
+            &__des{
+                position:absolute;
+                width: 100%;
+                bottom:0;
+                background: rgba(0, 0, 0, 0.7);
+                padding:11px 10px 8px;
+                h2{
+                    position: absolute;
+                    top:-16px;
+                    left:0;
+                    >span{
+                        background:$darkBlue;
+                        color:#fff;
+                        font-size:12px;
+                        display: inline-block;
+                        padding:6px 10px 5px;
+                        line-height: 12px;
+                    }
+                }
+                p{
+                    font-size:18px;
+                    line-height: 22px;
+                    color:#fff;
+                }
+            }
+            
+        }
+       
+    }
+    .slick-next ,
+    .slick-prev {
+        position: absolute;
+        top:50%;
+        height: 60px;
+        width: 44px;
+        background-color: #fff;
+        padding:0;
+        z-index: 9;
+        color:$darkBlue;
+        font-size: 30px;
+        -webkit-transform: translate(0, -125%);
+        -ms-transform: translate(0, -125%);
+        -moz-transform: translate(0, -125%);
+        transform: translate(0, -125%);
+    }
+    .slick-next{
+        right: 0;        
+        @include border-left-radius(3px);
+        padding-right:9px;
+        text-align: right;
+        background-repeat: no-repeat;
+        background-position: 16px center;
+        background-image:url(../images/arrow-right.png);
+        @include background-size(18px 29px);
+    }
+    .slick-prev{
+        left: 0;
+        @include border-right-radius(3px);
+        padding-left:9px;
+        text-align: left;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-image:url(../images/arrow-left.png);
+        @include background-size(18px 29px);
+        
+    }
+}
+
