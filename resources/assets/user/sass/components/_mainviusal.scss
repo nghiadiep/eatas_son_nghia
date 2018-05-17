@@ -207,7 +207,11 @@
     /***End Description***/
     }
 }
-
+@media (max-width: 767px){
+    .mainvisual .slick-next, .mainvisual .slick-prev{
+        @include background-size(auto 100%);
+    }
+}
 @media (max-width: 640px) {
     .mainvisual {
         .slick-next,
