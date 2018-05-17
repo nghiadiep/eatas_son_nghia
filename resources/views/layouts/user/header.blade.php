@@ -56,7 +56,7 @@
                         <div class="middle__contact contact clearfix">
                             <div class="contact__container">
                                 <p class="mobile-number">
-                                    <i class="fas fa-mobile-alt"></i>
+                                    <i class="fa fa-mobile"></i>
                                     <span>03-5797-7760</span>
                                 </p>
                                 <p class="title">電話でお問合わせ</p>
