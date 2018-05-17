@@ -10,9 +10,10 @@
                         <a class="footer__top__btn-tel" href="tel:{{ config('app.company_tel') }}">{{ config('app.company_tel') }}</a>
                     </div>
                     <ul class="footer-social">
-                        <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        <li class="icon-facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li class="icon-twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                        <li class="icon-hatena"><a href="#"><i class="fa fa-hatena"></i></a></li>
+                        <li class="icon-line"><a href="#"><img src="{{ asset('images/icon_line_sp.png') }}" alt="Line"></a></li>
                     </ul>
                     <div class="footer-link">
                         <ul>
@@ -67,10 +68,10 @@
                 <div class="bottom__social">
                     <div class="clearfix">
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-hatena"></i></a></li>
-                            <li><a href="#"><i class="fab fa-line"></i></a></li>
+                            <li class="icon-facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            <li class="icon-twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                            <li class="icon-hatena"><a href="#"><i class="fa fa-hatena"></i></a></li>
+                            <li class="icon-line"><a href="#"><img src="{{ asset('images/icon_line.png') }}" alt="Line"></a></li>
                         </ul>
                     </div>
                 </div>
