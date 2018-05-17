@@ -1,7 +1,7 @@
 <div class="sidebar">
     <div class="sidebar__box">
         <div class="sidebar-register">
-            <h3 class="sidebar-register__title"><span>新規会員登録（無料）</span></h3>
+            <h3 class="sidebar-register__title"><span><a href="{{ route('user.intro') }}">新規会員登録（無料）</a></span></h3>
             <div class="sidebar-register__body">
                 <ul>
                     <li><a href="">会員登録するとできること</a></li>
