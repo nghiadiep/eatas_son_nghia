@@ -71,12 +71,12 @@
                         <div class="wrapper">
                             <p>
                                 <span>検索ワード：</span>
-                                <span class="tag">インバウンド</span>
-                                <span class="tag">豆知識</span>
-                                <span class="tag">採用</span>
-                                <span class="tag">集客</span>
-                                <span class="tag">接客</span>
-                                <span class="tag">オーダーシステム</span>
+                                <a href=""><span class="tag">インバウンド</span></a>
+                                <a href=""><span class="tag">豆知識</span></a>
+                                <a href=""><span class="tag">採用</span></a>
+                                <a href=""><span class="tag">集客</span></a>
+                                <a href=""><span class="tag">接客</span></a>
+                                <a href=""><span class="tag">オーダーシステム</span></a>
                             </p>
                         </div>
                 </div>
