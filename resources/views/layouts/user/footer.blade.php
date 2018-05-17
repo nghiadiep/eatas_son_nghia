@@ -12,13 +12,13 @@
                     <ul class="footer-social">
                         <li class="icon-facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
                         <li class="icon-twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        <li class="icon-hatena"><a href="#"><i class="fa fa-hatena"></i></a></li>
+                        <li class="icon-hatena"><a href="#">B!</a></li>
                         <li class="icon-line"><a href="#"><img src="{{ asset('images/icon_line_sp.png') }}" alt="Line"></a></li>
                     </ul>
                     <div class="footer-link">
                         <ul>
-                            <li><a href="">運営会社</a></li>
-                            <li><a href="">プライバシーポリシー</a></li>
+                            <li><a href="{{route('root.index')}}">運営会社</a></li>
+                            <li><a href="https://glug.co.jp/privacy.php" target="_blank">プライバシーポリシー</a></li>
                         </ul>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                         <ul>
                             <li class="icon-facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
                             <li class="icon-twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                            <li class="icon-hatena"><a href="#"><i class="fa fa-hatena"></i></a></li>
+                            <li class="icon-hatena"><a href="#">B!</a></li>
                             <li class="icon-line"><a href="#"><img src="{{ asset('images/icon_line.png') }}" alt="Line"></a></li>
                         </ul>
                     </div>

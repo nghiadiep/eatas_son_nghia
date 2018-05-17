@@ -455,6 +455,8 @@
         display: block;
         padding-top: 20px;
         padding-bottom: 10px;
+        padding-left: 21.875%;
+        padding-right: 15.625%;
         position: relative;
         &:before,
         &:after {
@@ -664,7 +666,7 @@
 
 /***END USAGE EATAS***/
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
     .block-home-blog {
         &__inner {
