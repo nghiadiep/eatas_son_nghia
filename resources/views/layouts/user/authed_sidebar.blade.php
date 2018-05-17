@@ -1,7 +1,7 @@
 <div class="sidebar">
     <div class="sidebar__box">
         <div class="sidebar-point">
-            <div class="sidebar-point__header"><p>○○○さん</p><p>現在のポイント数：○○ポイント</p></div>
+            <div class="sidebar-point__header"><p class="name">○○○さん</p><p class="point">現在のポイント数：○○ポイント</p></div>
             <div class="sidebar-point__button"><a href="#" class="btn-point">ポイント獲得/利用履歴</a></div>
         </div>
     </div>
