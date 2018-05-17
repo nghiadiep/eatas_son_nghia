@@ -46,15 +46,15 @@
                 <div class="top__menu">
                     <div class="clearfix">
                         <ul>
-                            <li><a href="#">良くある質問</a></li>
+                            <li><a href="{{ route('root.faq') }}">よくある質問</a></li>
                             <li>｜</li>
-                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="{{ route('contact.add') }}">お問い合わせ</a></li>
                             <li>｜</li>
-                            <li><a href="#">運営会社</a></li>
+                            <li><a href="https://eatas.co.jp/">運営会社</a></li>
                             <li>｜</li>
-                            <li><a href="#">利用規約</a></li>
+                            <li><a href="https://eatas.jp/term">利用規約</a></li>
                             <li>｜</li>
-                            <li><a href="#">プライバシーポリシー</a></li>
+                            <li><a href="https://glug.co.jp/privacy.php">プライバシーポリシー</a></li>
                         </ul>
                     </div>
                 </div>

@@ -25,9 +25,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="{{route('root.faq')}}">
                                         <i class="fa fa-question-circle"></i>
-                                        <span>良くある質問</span>
+                                        <span>よくある質問</span>
                                     </a>
                                 </li>
                             </ul>
@@ -41,7 +41,7 @@
                     <div class="wrapper">
                         <div class="middle__search search">
                             <div class="search__logo">
-                                <img src="{{asset('images/logo_pc.png')}}" alt="EATAS">
+                                <a href="{{route('root.index')}}"><img src="{{asset('images/logo_pc.png')}}" alt="EATAS"></a>
                             </div>
                             <div class="search__search-container">
                                 <input type="text" name="search-word" id="search-word">
@@ -71,12 +71,12 @@
                         <div class="wrapper">
                             <p>
                                 <span>検索ワード：</span>
-                                <span class="tag">インバウンド</span>
-                                <span class="tag">豆知識</span>
-                                <span class="tag">採用</span>
-                                <span class="tag">集客</span>
-                                <span class="tag">接客</span>
-                                <span class="tag">オーダーシステム</span>
+                                <a href=""><span class="tag">インバウンド</span></a>
+                                <a href=""><span class="tag">豆知識</span></a>
+                                <a href=""><span class="tag">採用</span></a>
+                                <a href=""><span class="tag">集客</span></a>
+                                <a href=""><span class="tag">接客</span></a>
+                                <a href=""><span class="tag">オーダーシステム</span></a>
                             </p>
                         </div>
                 </div>
