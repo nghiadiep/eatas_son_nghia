@@ -18,9 +18,12 @@
             display: inline-block;
             background: #a0a0a0;
             color: #fff;
-            font-size: 13px;
-            line-height: 10px;
-            padding: 5px 13px;
+            font-size: 18px;
+            padding: 0 10px;
+            min-width: 136px;
+            height: 28px;
+            line-height: 30px;
+            text-align: center;
             @include border-radius(2px);
         }
     }
@@ -41,6 +44,7 @@
     }
     &__title {
         @include cutrow(2);
+        font-size: 20px;
     }
     /***BUTON  NEXT AND PREV***/
     .slick-prev,
@@ -83,5 +87,17 @@
                 opacity: 0.8;
             }
         }
+    }
+}
+@media (max-width: 639px){
+    .slider-readlater__cat>span{
+        font-size: get-vw(639, 18);
+        padding: 0 get-vw(639, 10);
+        min-width: get-vw(639, 136);
+        height: get-vw(639, 28);
+        line-height: get-vw(639, 30);
+    }
+    .slider-readlater__title{
+        font-size: get-vw(639, 20);
     }
 }
