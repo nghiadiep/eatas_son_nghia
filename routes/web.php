@@ -13,16 +13,10 @@
 
 //トップ
 Route::get('/', 'RootController@index')->name('root.index');
-<<<<<<< HEAD
 Route::get('loged', 'RootController@indexAuthed')->name('root.indexAuthed');
 Route::get("/point-history", function(){
     return view('point-history.view');
  });
-=======
-Route::get('/loged', 'RootController@indexAuthed')->name('root.index_authed_header.blade');
-
-
->>>>>>> 14daeb560df56ea8ef6a29c82c4c5bb60b1abd9f
 //動画用URL
 Route::get('/movie', "RootController@movie")->name('root.movie');
 
