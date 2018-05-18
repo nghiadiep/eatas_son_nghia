@@ -5,11 +5,12 @@
     list-style: none;
     background-color: transparent;
   .breadcrumb__item {
+      display: inline-block;
     + .breadcrumb__item::before {
       display: inline-block; 
       padding-right: 0;
       padding-left:0;
-      color: $breadcrumb-divider-color;
+      color: #000;
       content: ">";
     }
     + .breadcrumb__item:hover::before {
@@ -20,7 +21,7 @@
     }
   
     &.active {
-      color: $breadcrumb-active-color;
+      color: #000;
     }
   }
 }
