@@ -1,6 +1,7 @@
 # Ignore everything
 /*
-
+/public/css/user.css.map
+/public/css/user.css
 # Except
 !public/
 !resources/
