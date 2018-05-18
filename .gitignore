@@ -4,5 +4,5 @@
 # Except
 !public/
 !resources/
-
+!routes/
 
