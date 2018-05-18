@@ -1,0 +1,26 @@
+.breadcrumb {
+    display: block;
+    padding: 10px 10px 10px;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+  .breadcrumb__item {
+    + .breadcrumb__item::before {
+      display: inline-block; 
+      padding-right: 0;
+      padding-left:0;
+      color: $breadcrumb-divider-color;
+      content: ">";
+    }
+    + .breadcrumb__item:hover::before {
+      text-decoration: underline;
+    }
+    + .breadcrumb__item:hover::before {
+      text-decoration: none;
+    }
+  
+    &.active {
+      color: $breadcrumb-active-color;
+    }
+  }
+}

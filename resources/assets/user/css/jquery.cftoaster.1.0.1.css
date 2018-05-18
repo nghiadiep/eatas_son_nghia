@@ -1,0 +1,35 @@
+.cf_toaster {
+    position: absolute;
+    overflow: hidden;
+    z-index: 999999;
+    left: 50%;
+    min-height: 107px;
+    -webkit-box-shadow: 10px 10px 75px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 75px -19px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 75px -19px rgba(0, 0, 0, 0.75);
+}
+
+.cf_toaster .background {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 6px solid #3ab0d0;
+}
+
+.cf_toaster .content {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 27px;
+    padding: 10px;
+    text-shadow: none;
+}
