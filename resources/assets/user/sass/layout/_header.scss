@@ -496,6 +496,9 @@
                                         span {
                                             padding-left: 3px;
                                         }
+                                        &:hover {
+                                          opacity: 0.6;
+                                        }
                                     }
                                 }
                             }
@@ -592,6 +595,11 @@
                 &__bottom {
                     background-color: #f7f7f7;
                     padding: 4px 0;
+                    a {
+                      &:hover {
+                        opacity: 0.6;
+                      }
+                    }
                     span {
                         font-size: 13px;
                         display: inline-block;
