@@ -1,0 +1,44 @@
+@charset "utf-8";
+.block-usage-eatas {
+    text-align: center;
+    background: $yellow;
+    margin: 0 auto;
+    width: 82.5%;
+    &__title {
+        font-size: 32px;
+        border-bottom: 1px solid #b29b17;
+        font-weight: bold;
+        padding-bottom: 8px;
+        margin-bottom: 17px;
+        line-height: 1;
+    }
+    &__txt {
+        font-size: 13px;
+    }
+    a {
+        display: block;
+        padding-top: 23px;
+        padding-bottom: 14px;
+        padding-left: calc(17% + 10px);
+        padding-right: 24px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            background-color: $yellow;
+        }
+        &:before {
+            content: "";
+            left: 10px;
+            width: 16.56%;
+            background: $yellow url(../images/usage_eatas.png) no-repeat center left;
+            @include background-size(auto 100%);
+        }
+        >span {
+            display: block;
+        }
+    }
+}

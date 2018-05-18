@@ -8,6 +8,6 @@
             <li class="breadcrumb__item">ポイント履歴</li>
         </ol>
     </nav><!--/.breadcrumb-->
-    dd
+    
 </div>
 @endsection

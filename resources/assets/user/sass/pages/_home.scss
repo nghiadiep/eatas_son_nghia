@@ -740,7 +740,16 @@
         }
     }
 }
-
+@media (max-width: 767px){
+    .block-home-blog{
+        &__list{
+            display: none;
+        }
+        &__txt{
+            display: none;
+        }
+    }
+}
 @media (max-width: 640px) {
     .block-usage {
         &__title {
