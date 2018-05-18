@@ -6,6 +6,7 @@
     background-color: transparent;
   .breadcrumb__item {
       display: inline-block;
+      font-size: 14px;
     + .breadcrumb__item::before {
       display: inline-block; 
       padding-right: 0;

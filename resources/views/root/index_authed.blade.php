@@ -3,7 +3,6 @@
 @section('content')
 
 @include("component.part.slideshow", ["url" => route('api.articles.tops')])
-<div class="container clearfix">
 <div class="content-center">
     <div class="block-bg-gray">
         <section class="article-readlater">
@@ -143,10 +142,7 @@
     </div>
     
 </div> -->
-@include("layouts.user.authed_sidebar")
-</div>
 <script type="text/javascript">
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
