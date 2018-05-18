@@ -82,7 +82,14 @@
         @endauth
         <main class="main">
             <div class="main__content">
-                @yield("content")
+                <div class="container clearfix">
+                    @yield("content")
+                    @auth('user')
+                    @include("layouts.user.authed_sidebar")
+                    @else
+                    @include("layouts.user.sidebar")
+                    @endauth
+                </div>
             </div>
             <!--/.main__content-->
         </main>
