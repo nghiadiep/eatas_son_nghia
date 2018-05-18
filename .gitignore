@@ -1,8 +1,9 @@
 # Ignore everything
-*
+/*
 
 # Except
-!public/
-!resources/
-!routes/
+!public
+!resources
+!routes
+
 
