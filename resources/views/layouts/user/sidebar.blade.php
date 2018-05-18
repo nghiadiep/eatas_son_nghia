@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="sidebar__box">
-        <a class="btn-register"><span>ログインはこちら</span></a>
+        <a data-fancybox="modalLoginPC" data-src="#modalLogin" class="btn-register"><span>ログインはこちら</span></a>
     </div>
     <div class="sidebar__box sidebar-ads">
         <ul>
