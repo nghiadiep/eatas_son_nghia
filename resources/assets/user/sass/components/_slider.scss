@@ -52,7 +52,7 @@
         position: absolute;
         top: 50%;
         height: 70px;
-        width: 12px;
+        width: 16px;
         background: #f00;
         z-index: 99;
         font-size: 0;
@@ -83,6 +83,7 @@
         }
         .slick-next,
         .slick-prev{
+            width: 12px;
             cursor:  pointer;
             &:hover{
                 opacity: 0.8;
