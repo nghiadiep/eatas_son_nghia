@@ -706,6 +706,14 @@
                 min-width: 280px;
             }
         }
+        &__header {
+            font-size: 22px;
+            height: 150px;
+            @include cutrow(initial);
+        }
+        &__txt {
+            font-size: 13px;
+        }
     }
     .block-home-list {
         &__title {
