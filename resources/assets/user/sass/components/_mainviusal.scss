@@ -113,8 +113,12 @@
         position: relative;
         background: none;
         margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
         &__slider-main {
             &__item {
                 &__window {
