@@ -16,6 +16,26 @@
 					margin-bottom: 1px;
 				}
 				margin-bottom: 11px;
+				
+			}
+		}
+	}
+}
+@media (min-width:767px) {
+	.logout-page {
+		.block-logout {
+			&__title{ 
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+			&__btn-list {
+				li {
+					text-align: center;
+					a.btn {
+						width: 300px;
+						@include border-radius(7px);
+					}
+				}
 			}
 		}
 	}
