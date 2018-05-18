@@ -17,7 +17,7 @@
                     </ul>
                     <div class="footer-link">
                         <ul>
-                            <li><a href="{{route('root.index')}}">運営会社</a></li>
+                            <li><a href="https://eatas.co.jp" target="_blank">運営会社</a></li>
                             <li><a href="https://glug.co.jp/privacy.php" target="_blank">プライバシーポリシー</a></li>
                         </ul>
                     </div>

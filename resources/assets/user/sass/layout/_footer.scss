@@ -12,7 +12,7 @@
         &__btn-tel {
             display: inline-block;
             font-size: 26px;
-            padding: 4px 28px 1px 50px;
+            padding: 0;
             margin-top: 6px;
             font-weight: bold;
             line-height: 1;
@@ -22,15 +22,19 @@
             @include border-radius(2px);
             background-color: $yellow;
             color: $darkBlue;
+            height: 31px;
+            width: 240px;
+            text-align: center;
+            line-height: 34px;
             &::before {
                 content: "\f10b";
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 28px;
+                display: inline-block;
+                position: relative;
                 font-family: $font-awesome;
                 font-size: 30px;
-                margin-top: -15px;
+                vertical-align: middle;
+                margin-right: 10px;
+                top: -3px;
             }
             span {
                 display: block;
@@ -302,11 +306,13 @@
         &__top {
             &__btn-tel {
                 font-size: get-vw(640, 26);
-                padding: get-vw(640, 4) get-vw(640, 28) get-vw(640, 2) get-vw(640, 50);
+                padding: 0;
+                height:  get-vw(640, 31);
+                width:  get-vw(640, 240);
+                line-height: get-vw(640, 33);
                 &:before {
-                    left: get-vw(640, 28);
                     font-size: get-vw(640, 30);
-                    margin-top: get-vw(640, -16);
+                    top: get-vw(640, -2);
                 }
             }
             .footer-tel {
@@ -333,7 +339,7 @@
                         width: get-vw(640, 31);
                         height: get-vw(640, 31);
                         line-height: get-vw(640, 34);
-                        top: -2px;
+                        top: get-vw(640, -2);
                         font-size: get-vw(640, 20);
                     }
                 }
@@ -380,21 +386,16 @@
          margin-left: get-vw(639, 1);
           margin-right: get-vw(639, 1);
     }
-    .footer__top__btn-tel{
-        padding-left: get-vw(639, 42);
-        padding-right: get-vw(639, 20);
-    }
     .footer__top .footer-social .icon-line a{
          top: get-vw(639, 3);
     }
-    .footer__top__btn-tel::before{
-        left: get-vw(639, 20);
+    .footer .footer-social .icon-hatena>a{
+        line-height: get-vw(639, 33);
     }
 }
-
-@media (max-width: 578px) {
+@media (max-width: 568px) {
     .footer__top .footer-social .icon-hatena>a{
-        top:-1px;
+        top: get-vw(568, -1);
     }
 }
 
@@ -407,27 +408,14 @@
         margin-bottom: 2px;
     }
 }
-@media (max-width: 468px) {
-    .footer__top__btn-tel::before{
-        margin-top: get-vw(468, -11);
-        font-weight: normal;
-    }
-}
+
 @media (max-width: 416px) {
     .footer .footer-social {
         position: relative;
         top: -5px;
     }
-    .footer__top__btn-tel::before{
-        font-size: get-vw(416, 17);
-        margin-top: get-vw(416, -8);
-    }
 }
-@media (max-width: 399px) {
-    .footer__top__btn-tel::before{
-        margin-top: get-vw(416, -9);
-    }
-}
+
 @media (max-width: 375px) {
     .footer{
         padding-top: 6px;
@@ -446,29 +434,11 @@
         position: relative;
         top: get-vw(375, -2);
     }
-    .footer__top__btn-tel{
-        margin-top: 1px;
-        padding-top: 2px;
-        &:before{
-            font-weight: normal;
-            top: 1px;
-            margin-top:0;
-        }
-    }
 
 }
 @media (max-width: 375px) {
    
-    .footer__top__btn-tel{
-        padding-top: 3px;
-        padding-bottom: 0;
-    }
-    .footer__top__btn-tel:before {
-        font-weight: normal;
-        top: 1.5px;
-        margin-top: 0;
-    }
     .footer__top .footer-social .icon-hatena>a{
-        top: -0.5px;
+        top: -1px;
     }
 }
