@@ -1,28 +1,36 @@
+$breadCrumdColor : #666666;
 .breadcrumb {
     display: block;
-    padding: 10px 10px 10px;
-    margin-bottom: 0;
+    padding: 0;
     list-style: none;
     background-color: transparent;
-  .breadcrumb__item {
+    margin: 15px 0 40px;
+  &__item {
       display: inline-block;
       font-size: 14px;
+      color: $breadCrumdColor;
+      float: left;
+    a{
+        color: $breadCrumdColor;
+        &:hover{
+            color: rgba($breadCrumdColor,0.5);
+        }
+    }
     + .breadcrumb__item::before {
       display: inline-block; 
       padding-right: 0;
       padding-left:0;
-      color: #000;
-      content: ">";
+      content: "\f105";
+      font-family: $font-awesome;
+      font-weight: bold;
+      margin-left: 14px;
+      margin-right: 14px;
     }
     + .breadcrumb__item:hover::before {
       text-decoration: underline;
     }
     + .breadcrumb__item:hover::before {
       text-decoration: none;
-    }
-  
-    &.active {
-      color: #000;
     }
   }
 }
