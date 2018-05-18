@@ -2,8 +2,11 @@
 /*
 /public/css/user.css.map
 /public/css/user.css
+/resources/assets/user/css/user.css
+/resources/assets/user/css/user.css.map
 # Except
-!public/
-!resources/
-!routes/
+!/public
+!/resources
+!/routes
+
 
