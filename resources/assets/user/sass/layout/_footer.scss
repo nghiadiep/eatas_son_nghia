@@ -59,6 +59,10 @@
                 >a {
                     font-size: 36px;
                     color: #fff;
+                    img {
+                        width: 21px;
+                        display: block;
+                    }
                 }
             }
         }
@@ -187,39 +191,8 @@
                         a {
                             color: #ffffff;
                         }
-                        &.icon-line {
-                            a {
-                                position: relative;
-                                top: 2px;
-                            }
-                        }
                         &.icon-hatena {
-                            background: #fff;
-                            width: 22px;
-                            height: 21px;
-                            line-height: 34px;
-                            border-radius: 3px;
-                            -webkit-border-radius: 3px;
-                            -moz-border-radius: 3px;
-                            -ms-border-radius: 3px;
-                            -o-border-radius: 3px;
-                            position: relative;
-                            top: 3px;
-                            right: -3px;
-                            font-size: 16px;
-                            text-align: center;
-                            font-weight: bold;
-                            a {
-                                color: #001925;
-                                -moz-border-radius: 3px;
-                                -ms-border-radius: 3px;
-                                -o-border-radius: 3px;
-                                position: relative;
-                                top: -5px;
-                                right: 3px;
-                                font-size: 16px;
-                                font-weight: bold;
-                            }
+                            
                         }
                     }
                 }
@@ -269,35 +242,9 @@
 }
 
 @media (max-width: 767px) {
-    .footer {
-        .footer-social {
-            position: relative;
-            top: -6px;
-            .icon-hatena {
-                width: 31px;
-                height: 31px;
-                >a{
-                    display:block;
-                    background: #fff;
-                    width: 31px;
-                    height: 31px;
-                    line-height: 34px;
-                    color: $darkBlue;
-                    @include border-radius(3px);
-                    position: relative;
-                    top: -2px;
-                    font-size: 20px;
-                    text-align: center;
-                    font-weight: bold;
-                }
-            }
-            .icon-line {
-                a {
-                    position: relative;
-                    top: 3px;
-                }
-            }
-        }
+    .footer__top__btn-tel {
+        margin-top: 0px;
+        display: block;
     }
 }
 
@@ -307,9 +254,9 @@
             &__btn-tel {
                 font-size: get-vw(640, 26);
                 padding: 0;
-                height:  get-vw(640, 31);
+                height:  22px;
                 width:  get-vw(640, 240);
-                line-height: get-vw(640, 33);
+                line-height: 23px;
                 &:before {
                     font-size: get-vw(640, 30);
                     top: get-vw(640, -2);
@@ -332,33 +279,8 @@
                         font-size: get-vw(640, 36);
                     }
                 }
-                .icon-hatena {
-                    width: get-vw(640, 31);
-                    height: get-vw(640, 31);
-                    >a{
-                        width: get-vw(640, 31);
-                        height: get-vw(640, 31);
-                        line-height: get-vw(640, 34);
-                        top: get-vw(640, -2);
-                        font-size: get-vw(640, 20);
-                    }
-                }
-                .icon-line {
-                    a {
-                        position: relative;
-                        top: 3px;
-                    }
-                }
-                .icon-line {
-                    a {
-                        img {
-                            width: get-vw(640, 31);
-                            height: get-vw(640, 31);
-                        }
-                        position: relative;
-                        top: 3px;
-                    }
-                }
+                
+                
             }
             .footer-link {
 
@@ -386,34 +308,20 @@
          margin-left: get-vw(639, 1);
           margin-right: get-vw(639, 1);
     }
-    .footer__top .footer-social .icon-line a{
-         top: get-vw(639, 3);
-    }
-    .footer .footer-social .icon-hatena>a{
-        line-height: get-vw(639, 33);
-    }
 }
 @media (max-width: 568px) {
-    .footer__top .footer-social .icon-hatena>a{
-        top: get-vw(568, -1);
-    }
+    
 }
 
 @media (max-width: 480px) {
-    .footer__top .footer-link {
-        position: relative;
-        top: -2px;
-    }
+    
     .footer__top .footer-link ul>li{
         margin-bottom: 2px;
     }
 }
 
 @media (max-width: 416px) {
-    .footer .footer-social {
-        position: relative;
-        top: -5px;
-    }
+    
 }
 
 @media (max-width: 375px) {
@@ -423,16 +331,8 @@
     .footer__bottom{
         margin-top: 2px;
     }
-    .footer__top .footer-link ul{
-        position: relative;
-        top: 2px;
-    }
     .footer__top .footer-link ul>li{
         margin-bottom: 2px;
-    }
-    .footer__top .footer-social{
-        position: relative;
-        top: get-vw(375, -2);
     }
 
 }
@@ -440,5 +340,11 @@
    
     .footer__top .footer-social .icon-hatena>a{
         top: -1px;
+    }
+}
+@media (max-width: 320px) {
+    .footer__top .footer-social > li {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }

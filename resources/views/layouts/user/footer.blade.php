@@ -10,10 +10,10 @@
                         <a class="footer__top__btn-tel" href="tel:{{ config('app.company_tel') }}">{{ config('app.company_tel') }}</a>
                     </div>
                     <ul class="footer-social">
-                        <li class="icon-facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                        <li class="icon-twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        <li class="icon-hatena"><a href="#">B!</a></li>
-                        <li class="icon-line"><a href="#"><img src="{{ asset('images/icon_line_sp.png') }}" alt="Line"></a></li>
+                        <li class="icon-facebook"><a href="#" title="Facebook"><img src="{{ asset('images/icon_facebook_sp.png') }}" alt="Facebook"></a></li>
+                        <li class="icon-twitter"><a href="#" title="Twitter"><img src="{{ asset('images/icon_twitter_sp.png') }}" alt="Twitter"></a></li>
+                        <li class="icon-hatena"><a href="#" title="Hatena"><img src="{{ asset('images/icon_hatena_sp.png') }}" alt="Hatena"></a></li>
+                        <li class="icon-line"><a href="#" title="Line"><img src="{{ asset('images/icon_line_sp.png') }}" alt="Line"></a></li>
                     </ul>
                     <div class="footer-link">
                         <ul>
@@ -68,10 +68,10 @@
                 <div class="bottom__social">
                     <div class="clearfix">
                         <ul>
-                            <li class="icon-facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                            <li class="icon-twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                            <li class="icon-hatena"><a href="#">B!</a></li>
-                            <li class="icon-line"><a href="#"><img src="{{ asset('images/icon_line.png') }}" alt="Line"></a></li>
+                            <li class="icon-facebook"><a href="#" title="Facebook"><img src="{{ asset('images/icon_facebook.png') }}" alt="Facebook"></a></li>
+                            <li class="icon-twitter"><a href="#" title="Twitter"><img src="{{ asset('images/icon_twitter.png') }}" alt="Twitter"></a></li>
+                            <li class="icon-hatena"><a href="#" title="Hatena"><img src="{{ asset('images/icon_hatena.png') }}" alt="Hatena"></a></li>
+                            <li class="icon-line"><a href="#" title="Line"><img src="{{ asset('images/icon_line.png') }}" alt="Line"></a></li>
                         </ul>
                     </div>
                 </div>
