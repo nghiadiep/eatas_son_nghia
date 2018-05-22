@@ -6,6 +6,7 @@
 @section('content')
 
 <h2 class="page-title">検索結果</h2>
+<div class="content-center">
 <div class="search-result-page" id="articles-list">
     <div class="block-search-form">
         <form action="{{route('articles.search')}}" method="GET">
@@ -128,7 +129,7 @@
         <!--/.block-botttom-->
     </div>
 </div>
-
+</div>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
     let vm = new Vue( {
