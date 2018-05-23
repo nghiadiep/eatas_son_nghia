@@ -223,7 +223,7 @@ body {
 select::-ms-expand {
     display: none;
 }
-@meida (min-width: 767px){
+@media (min-width: 768px){
     body{
         font-size: 13px;
     }
