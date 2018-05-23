@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if(this.articles.length > 0){
                 $('.mainvisual .mainvisual__slider-main').slick({
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '0',
                     autoplay: true,
                     autoplaySpeed: 5000,
                     dots: true,
@@ -46,17 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     nextArrow: '<button class="slick-next"></button>',
                     responsive: [
                     {
-                      breakpoint: 1040,
-                      settings: {
-                        centerMode: false
-                      }
-                    },
-                    {
-                      breakpoint: 981,
-                      settings: {
-                        centerMode: false
-                      }
-                    },{
                       breakpoint: 768,
                       settings: {
                         centerMode: false
