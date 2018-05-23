@@ -102,3 +102,12 @@
 .fancybox-bg{
     background:#000;
 }
+@media (min-width: 768px) {
+    .modal-login {
+        &__inner {
+            button.btn {
+                width: 100%;
+            }
+        }
+    }
+}

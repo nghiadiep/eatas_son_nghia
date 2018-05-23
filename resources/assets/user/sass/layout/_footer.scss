@@ -210,7 +210,7 @@
     &__top-button {
         position: absolute;
         top: -70px;
-        right: 15px;
+        right: 10px;
         a {
             color: #ffffff;
             background: $darkBlue;
@@ -226,7 +226,7 @@
 @media (min-width: 767px) {
     .footer {
         margin-top: 84px;
-        position: relative;
+        position: fixed;
         .bottom__copyright {
             p {
                 text-align: left;
