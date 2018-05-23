@@ -21,7 +21,7 @@
     </div><!--/.block-point-number-->
     <div class="point-number-buysell">
         <div class="point-number-buysell__header">
-            <h2 class="section__title"><span>ポイント利用・獲得履歴</span></h2>
+            <h2 class="section-title"><span>ポイント利用・獲得履歴</span></h2>
             <a href="#" class="btn-expiration"><span>失効予定はこちら</span></a>
         </div>
         <div class="point-number-buysell__body">

@@ -23,17 +23,29 @@
 
 .point-number-buysell {
     &__header {
+        text-align: center;
         .section-title {
             display: inline-block;
         }
         .btn-expiration {
             display: inline-block;
             background: #9FA0A0;
+            color: #fff;
             font-size: 13px;
             line-height: 1;
             @include border-radius(3px);
             &:hover{
                 background: rgba(#9FA0A0,0.5)
+            }
+            &:before{
+                content: "\f101";
+                display: inline-block;
+                font-family: $font-awesome;
+                font-size: 22px;
+                vertical-align: middle;
+                position: relative;
+                top: -2px;
+                margin-right: 2px;
             }
         }
     }
