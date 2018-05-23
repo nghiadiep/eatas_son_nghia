@@ -3,6 +3,7 @@
 @section('content')
 
 <h2 class="page-title">あとで読む</h2>
+<div class="content-center">
 <div class="item-list item-list--readafer block-home-list" id="clips-list">
     <ul>
         <li v-for="clip in clips">
@@ -23,7 +24,7 @@
     </div>
     <!--/.block-botttom-->
 </div>
-
+</div>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
 
