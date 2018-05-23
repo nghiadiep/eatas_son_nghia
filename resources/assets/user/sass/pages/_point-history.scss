@@ -6,18 +6,85 @@
     max-width: 300px;
     display: table;
     &__icon,
-    dl{
-        display:table-cell;
+    dl {
+        display: table-cell;
     }
-    dl{
-      dt{
-        font-size: 32px;
-        border-bottom: 1px solid #b29b17;
-        font-weight: bold;
-        padding-bottom: 8px;
-        margin-bottom: 17px;
-        line-height: 1;
-      } 
+    dl {
+        dt {
+            font-size: 32px;
+            border-bottom: 1px solid #b29b17;
+            font-weight: bold;
+            padding-bottom: 8px;
+            margin-bottom: 17px;
+            line-height: 1;
+        }
     }
-    
+}
+
+.point-number-buysell {
+    &__header {
+        .section-title {
+            display: inline-block;
+        }
+        .btn-expiration {
+            display: inline-block;
+            background: #9FA0A0;
+            font-size: 13px;
+            line-height: 1;
+            @include border-radius(3px);
+            &:hover{
+                background: rgba(#9FA0A0,0.5)
+            }
+        }
+    }
+    &__body {}
+}
+
+.section {
+    &__title {}
+}
+/***ポイント利用・獲得履歴***/
+.table-point-buysell {
+    width: 100%;
+    >thead{
+        tr{
+            th,td{
+                font-size: 13px;
+                color: #999999;
+                padding: 10px;
+            }
+        }
+    }
+    >tbody{
+        >tr{
+            th,td{
+                padding: 10px;
+                color: #666666;
+                font-size: 14px;
+                border-bottom: 1px solid #ccc;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+
+/***BUTON LABEL ****/
+.label-bs {
+    min-width: 66px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1;
+    padding: 2px;
+    background: $darkBlue;
+    color: #fff;
+    &:hover{
+        background: rgba($darkBlue,0.5);
+    }
+    &--yellow {
+        background: $yellow;
+        &:hover{
+            background: rgba($yellow,0.5);
+        }
+    }
 }
