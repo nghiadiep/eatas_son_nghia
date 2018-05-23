@@ -2,7 +2,7 @@
 .block-point-number {
     text-align: center;
     background: $yellow;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     max-width: 300px;
     display: table;
     &__icon,
@@ -23,17 +23,35 @@
 
 .point-number-buysell {
     &__header {
+        text-align: center;
+        margin-bottom: 10px;
         .section-title {
             display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0;
         }
         .btn-expiration {
+            margin-left: 14px;
             display: inline-block;
             background: #9FA0A0;
+            color: #fff;
             font-size: 13px;
             line-height: 1;
+            padding: 5px 10px;
+            vertical-align: middle;
+            position: relative;
+            top: -3px;
             @include border-radius(3px);
-            &:hover{
-                background: rgba(#9FA0A0,0.5)
+            &:hover {
+                background: rgba(#9FA0A0, 0.5)
+            }
+            &:before {
+                content: "\f101";
+                display: inline-block;
+                font-family: $font-awesome;
+                vertical-align: middle;
+                position: relative;
+                margin-right: 2px;
             }
         }
     }
@@ -43,48 +61,53 @@
 .section {
     &__title {}
 }
+
+
 /***ポイント利用・獲得履歴***/
+
 .table-point-buysell {
     width: 100%;
-    >thead{
-        tr{
-            th,td{
+    >thead {
+        tr {
+            th,
+            td {
                 font-size: 13px;
                 color: #999999;
-                padding: 10px;
+                padding: 10px 0;
             }
         }
     }
-    >tbody{
-        >tr{
-            th,td{
+    >tbody {
+        >tr {
+            th,
+            td {
                 padding: 10px;
                 color: #666666;
                 font-size: 14px;
                 border-bottom: 1px solid #ccc;
                 vertical-align: middle;
+                &:nth-of-type(1){
+                    padding-left:0;
+                }
             }
         }
     }
 }
 
 
+
 /***BUTON LABEL ****/
+
 .label-bs {
+    display: inline-block;
     min-width: 66px;
     text-align: center;
     font-size: 14px;
     line-height: 1;
-    padding: 2px;
+    padding: 4px 2px 2px;
     background: $darkBlue;
     color: #fff;
-    &:hover{
-        background: rgba($darkBlue,0.5);
-    }
     &--yellow {
         background: $yellow;
-        &:hover{
-            background: rgba($yellow,0.5);
-        }
     }
 }
