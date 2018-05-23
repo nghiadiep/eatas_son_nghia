@@ -4,6 +4,8 @@
 
 
 <h2 class="page-title">EATAS利用規約</h2>
+<div class="content-center">
+
 <div class="block-terms-service">
     <div class="block-terms-service__notice mt05">
     EATAS利用規約（以下本規約）は、株式会社EATAS（以下「当社」）と当社の提供する「EATAS」（以下「本サービス」）の利用者（以下「ユーザー」）との間で本サービスの利用条件を定めるものです。
@@ -181,8 +183,9 @@
     <h3 class="text-bold mt25 mb10">準拠法および管轄裁判所</h3>
     <p class="fs12 mb20">本規約の準拠法は日本法とし、本規約に起因し又は関連する当社とユーザーの間に生じた紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
 </div>
-
+    
 <p class="text-right mb05 fs9">【2018年3月19日制定】</p>
+</div>
 @endsection
 
 

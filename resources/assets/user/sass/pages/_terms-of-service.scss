@@ -53,3 +53,33 @@
 		margin: 10px 0;
 	}
 }
+@media (min-width:768px) {
+	.block-terms-service {
+		&__notice {
+			font-size: 14px;
+			line-height: 30px;
+		}
+	}
+	.block--list__number {
+		h3 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 30px;
+		}
+		ul {
+			li {
+				div.txt {
+					font-size: 14px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+	.content-center {
+		p {
+			font-size: 14px;
+		}
+	}
+}
