@@ -100,9 +100,6 @@
         }
     }
 }
-.mb18 {
-    margin-bottom: 18px;
-}
 .contact-page{
     .block-alert{
        margin-top: -7px; 
@@ -121,5 +118,85 @@
     }
     textarea.form-control{
         font-family: メイリオ, Meiryo;
+    }
+}
+@media (min-width: 767px) {
+    .block-contact {
+        &__notice {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &__message {
+            padding: 36px 15px;
+            p {
+                font-size: 18px;
+            }
+            ul {
+                font-size: 14px;
+            }
+            li {
+                display: block;
+                line-height: 30px;
+                margin-bottom: 7px;
+                padding-left: 12px;
+                position: relative;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            li::before {
+                content: "";
+                color: $yellow;
+                display: block; 
+                position: absolute;
+                left: 0;
+                top: 9px;
+                background: $yellow;
+                width: 9px;
+                height: 9px;
+                @include border-radius(6px);
+            }
+        }
+    }
+    .block-form__btn-list {
+        & ul {
+            margin-right: -15px;
+            margin-left: -15px;
+            & li {
+                float: left;
+                width: 50%;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-bottom: 20px;
+                & .btn {
+                    display: block;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .block-form__btn-bottom {
+        text-align: center;
+        & .btn {
+            width: 300px;
+        }
+    }
+    .block-form__action {
+        & .checkbox-group {
+            & label {
+                & span {
+                    font-size: 18px;
+                }
+            }
+        }    
+    }
+    .block-form__confirm__title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .block-form__btn-bottom__thanks {
+        width:300px;
+        height:45px;
+        margin: 0 auto;
     }
 }
