@@ -38,6 +38,7 @@
 					a.btn {
 						width: 300px;
 						@include border-radius(7px);
+						padding-top: 14px;
 					}
 				}
 			}

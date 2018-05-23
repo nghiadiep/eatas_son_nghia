@@ -10,16 +10,21 @@
 <div class="search-result-page" id="articles-list">
     <div class="block-search-form">
         <form action="{{route('articles.search')}}" method="GET">
-            <div class="form-group">
+            <div class="search-control pc clearfix">
+                <div class="search-control__input"><input class="form-control" value="{{isset($params['freeword']) ? $params['freeword'] : null }}" name="freeword"></div>
+                <div class="search-control__search-button"><button class="btn btn--block btn--yellow">検索する</button></div>
+                <div class="search-control__search-advance"><button v-on:click="switchDetail" type="button" class="btn btn--block btn--gray">詳細検索</button></div>
+            </div>
+            <div class="form-group sp">
                 <input class="form-control" value="{{isset($params['freeword']) ? $params['freeword'] : null }}" name="freeword">
             </div>
             <!--/.form-group-->
-            <div class="block-search-form__btn-bottom">
+            <div class="block-search-form__btn-bottom sp">
                 <button class="btn btn--block btn--yellow">検索する</button>
             </div>
             
             <div>
-                <div class="block-search-form__btn-bottom">
+                <div class="block-search-form__btn-bottom sp">
                     <button v-on:click="switchDetail" type="button" class="btn btn--block btn--gray">詳細検索</button>
                 </div>
 
