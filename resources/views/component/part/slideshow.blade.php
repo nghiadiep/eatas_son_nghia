@@ -44,8 +44,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     arrows: true,
                     prevArrow: '<button class="slick-prev"></button>',
                     nextArrow: '<button class="slick-next"></button>',
-                    responsive: [{
-                      breakpoint: 767,
+                    responsive: [
+                    {
+                      breakpoint: 1040,
+                      settings: {
+                        centerMode: false
+                      }
+                    },
+                    {
+                      breakpoint: 981,
+                      settings: {
+                        centerMode: false
+                      }
+                    },{
+                      breakpoint: 768,
                       settings: {
                         centerMode: false
                       }
