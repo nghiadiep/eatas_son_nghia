@@ -304,7 +304,7 @@
             margin: 0 auto;
             padding: 0;
             display: inline-block;
-
+            top: 25%;
             position: absolute;
             text-align: center;
             right: 10px; //width: calc(100% - 90px);
@@ -359,7 +359,7 @@
             @extend .block-home-blog__footer__btn-bookshelf;
             margin-left: 1px;
             &:before {
-                background: url(../images/icon_clip_sp.png) no-repeat center center;
+                background: url(../images/icon_clip.png) no-repeat center center;
                 @include background-size(100% 100%);
                 width: 60px;
                 height: 60px;
@@ -372,7 +372,7 @@
                 color: #fff;
                 &:before {
                     content: "";
-                    background: url(../images/icon_clip_on_sp.png) no-repeat center center;
+                    background: url(../images/icon_clip_on.png) no-repeat center center;
                     @include background-size(100% 100%)
                 }
             }
@@ -701,8 +701,8 @@
         }
         &__footer {
             &__center {
-                left: 50%;
-                top: 2px;
+                left: 57%;
+                top: 25%;
                 right: auto;
             }
         }
