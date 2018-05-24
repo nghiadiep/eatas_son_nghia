@@ -116,6 +116,10 @@
         margin-left: 0;
         margin-right: 0;
         padding-bottom: 27px;
+        width: 1280px;
+        position: relative;
+        margin-left: -150px;
+        margin-right: -150px;
         &:after{
             content:"";
             position: absolute;
@@ -223,7 +227,13 @@
     }
 }
 
-
+@media (max-width: 980px) {
+    .mainvisual{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media (max-width: 767px){
     .mainvisual{
         &:after,&:before{
