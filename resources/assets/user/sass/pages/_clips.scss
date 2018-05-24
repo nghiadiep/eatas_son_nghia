@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    #clips-list {
+        ul {
+            padding-bottom: 38px;
+        }
+        .item-list {
+            &__arrow {
+                width: 47px;
+            }
+            &__des {
+                &__title {
+                    font-size: 18px;
+                }
+            }
+            &__thumb {
+                h3 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
