@@ -316,8 +316,8 @@
         &__btn-bookshelf,
         &__btn-read-later {
             display: block;
-            width: 42px;
-            height: 42px;
+            width: 60px;
+            height: 60px;
             padding: 0px;
             background: #fff;
             color: $darkBlue;
@@ -328,6 +328,7 @@
             &.no-boder {
                 border: 0px;
             }
+            font-size: 0px;
         }
         &__btn-bookshelf {
             left: 0;
@@ -335,9 +336,12 @@
             &:before {
                 content: "";
                 display: block;
-                width: 21px;
-                height: 17px;
                 margin: 0 auto 3px;
+                width: 60px;
+                height: 60px;
+                position: relative;
+                top: -6px;
+                left: -1px;
                 background: url(../images/icon_stock.png) no-repeat center center;
                 @include background-size(100% 100%)
             }
@@ -355,15 +359,20 @@
             @extend .block-home-blog__footer__btn-bookshelf;
             margin-left: 1px;
             &:before {
-                background: url(../images/icon_clip.png) no-repeat center center;
+                background: url(../images/icon_clip_sp.png) no-repeat center center;
                 @include background-size(100% 100%);
+                width: 60px;
+                height: 60px;
+                position: relative;
+                top: -6px;
+                left: -1px;
             }
             &--active {
                 background: $darkBlue;
                 color: #fff;
                 &:before {
                     content: "";
-                    background: url(../images/icon_clip_on.png) no-repeat center center;
+                    background: url(../images/icon_clip_on_sp.png) no-repeat center center;
                     @include background-size(100% 100%)
                 }
             }
@@ -714,6 +723,7 @@
         &__txt {
             font-size: 13px;
         }
+        
     }
     .block-home-list {
         &__title {

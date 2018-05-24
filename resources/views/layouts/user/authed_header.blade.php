@@ -14,7 +14,7 @@
                             <ul>
                                 <li>
                                     <a href="">
-                                        <i class="fa fa-bookmark"></i>
+                                        <img src="{{asset('images/icon_bookmark.png')}}" alt="bookmark">
                                         <span>ご利用ガイド</span>
                                     </a>
                                 </li>

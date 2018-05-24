@@ -5,11 +5,12 @@
 <h2 class="page-title">あとで読む</h2>
 <div class="content-center">
 <div class="item-list item-list--readafer block-home-list" id="clips-list">
-    <ul>
+    <!-- <ul>
         <li v-for="clip in clips">
             <clip-chip v-bind:clip="clip" :authed="true" @delete-event="onDelete" />
         </li>
-    </ul>
+    </ul> -->
+    <ul><li><div class="item-list__box"><div class="item-list__thumb"><div class="item-list__photo"><a href="https://eatas.jp/article/274"><img src="https://eatas.jp/storage/image/Ijk6Sa90E5BbZCC3T2ZAZpy4zFRtF9XTHP3ydotu.jpg" alt="メニュー"></a></div> <h3>メニュー</h3></div> <div class="item-list__des"><h3 class="item-list__des__title"><a href="https://eatas.jp/article/274">全国の“飲食店の冷蔵庫”をめざす業務用食材ECサイト</a></h3> <div class="block-option"><a><img src="https://eatas.jp/images/icon-trash.png" alt=""></a></div></div> <div class="item-list__arrow"><a href="https://eatas.jp/article/274"><i aria-hidden="true" class="fa fa-angle-right"></i></a></div></div></li><li><div class="item-list__box"><div class="item-list__thumb"><div class="item-list__photo"><a href="https://eatas.jp/article/279"><img src="https://eatas.jp/storage/image/KMB94b6hakYzFuZkdEOeDs3zItvP8xHvIEdntsqM.jpg" alt="メニュー"></a></div> <h3>メニュー</h3></div> <div class="item-list__des"><h3 class="item-list__des__title"><a href="https://eatas.jp/article/279">産地を持ち歩く！飲食店向け鮮魚注文サービス『魚ポチ』に注目</a></h3> <div class="block-option"><a><img src="https://eatas.jp/images/icon-trash.png" alt=""></a></div></div> <div class="item-list__arrow"><a href="https://eatas.jp/article/279"><i aria-hidden="true" class="fa fa-angle-right"></i></a></div></div></li></ul>
     <!--/.item-list-->
     <div class="block-botttom mt12" v-if="canMore && page <= 1">
         <a v-on:click="readMore" class="btn btn--block btn--default">あとで読むをもっと見る</a>

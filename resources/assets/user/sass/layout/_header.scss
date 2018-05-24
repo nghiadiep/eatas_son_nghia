@@ -701,6 +701,10 @@
                                     display: inline-block;
                                     padding-left: 29px;
                                     a {
+                                        img {
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                        }
                                         color: #ffffff;
                                         font-size: 13px;
                                         span {
