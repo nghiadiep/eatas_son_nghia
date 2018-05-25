@@ -8,6 +8,7 @@
         &__arrow,
         &__des {
             padding-top: 15px;
+            // overflow: hidden;
         }
         &__thumb {
             // width: 60px;
@@ -47,10 +48,35 @@
             }
         }
     }
+    .block-option__share__social__list li>a>img {
+        border-radius: 50%;
+    }
 }
 
 @media(min-width:768px){
     .bookshelf-page .item-list__des__gray-box textarea {
         max-width: 590px;
     }
+    .bookshelf-page {
+        .item-list {
+            &__des {
+                &__title {
+                    font-size: 18px;
+                }
+                &__cat {
+                    font-size: 12px;
+                }
+                &__gray-box {
+                    textarea {
+                        max-width: 100%;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.block-botttom a.btn {
+    width: 300px;
 }

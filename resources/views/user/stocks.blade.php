@@ -3,6 +3,7 @@
 @section('content')
 
 <h2 class="page-title">本棚</h2>
+<div class="content-center">
 <div class="item-list item-list--readafer bookshelf-page" id="stocks-list">
     <ul>
         <li v-for="stock in stocks">
@@ -24,6 +25,7 @@
     </div>
 </div>
 
+</div>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -59,5 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        $('.showItem').on('click', function() {
+            $(this).parent().find('.block-option__share__social').toggleClass('active');
+        })
+    });
+</script>
 @endsection
