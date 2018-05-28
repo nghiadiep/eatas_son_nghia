@@ -151,6 +151,9 @@
 		.block-form {
 			.title-center {
 				font-size: 24px;
+				span {
+					padding: 0 35px;
+				}
 			}
 			.sub-title {
 				font-size: 18px;
@@ -173,6 +176,27 @@
 							height: 44px;
 						}
 					}
+					.group-radio-list {
+						li {
+							label {
+								span {
+									font-size: 24px;
+								}
+							}
+						}
+					}
+					.row-btn {
+						p {
+							button.btn {
+								width: 100%;
+							}
+						}
+					}
+					.select-group {
+						select {
+							font-size: 18px;
+						}
+					}
 				}
 			}
 			.input-group__control input {
@@ -182,12 +206,20 @@
 			.input-placeholder>label>span {
 				font-size: 18px;
 			}
+			.zip-box {
+				.btn {
+					font-size: 18px;
+				}
+			}
 		}
 	}
 	.edit-info-page {
 		.block-form {
 			.title-center {
 				font-size: 24px;
+				span {
+					padding: 0 35px;
+				}
 			}
 			&__sec {
 				padding-bottom: 18px;

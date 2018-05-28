@@ -3,6 +3,7 @@
 @section('content')
 
 <h2 class="page-title">会員情報確認・編集</h2>
+<div class="content-center edit-info-page">
 <div class="block-form">
     <section>
         <h2 class="title-center">
@@ -20,6 +21,7 @@
             <!--/.block-form__btn-bottom-->
         </form>
     </section>
+</div>
 </div>
 
 @endsection

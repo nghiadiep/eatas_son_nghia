@@ -84,12 +84,6 @@
 	.sp {
 		display: none;
 	}
-	.block-botttom {
-		text-align: center;
-		a.btn {
-			padding: 14px 48px;
-		}
-	}
 	.search-result-page { 
 		.block-search-form {
 			&__tt{
@@ -101,6 +95,12 @@
 				margin-bottom: 20px;
 			}
 			
+		}
+		.block-botttom {
+			text-align: center;
+			a.btn {
+				padding: 14px 48px;
+			}
 		}
 		.item-list { 
 			> ul {

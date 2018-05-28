@@ -62,7 +62,7 @@
             vertical-align: middle;
             position: relative;
             top: -3px;
-            @include border-radius(3px);
+            @include border-radius(2px);
             &:hover {
                 background: rgba(#9FA0A0, 0.5)
             }
@@ -104,6 +104,9 @@
                 &:last-child {
                     text-align: right;
                 }
+            }
+            th {
+                padding-bottom: 5px;
             }
         }
     }
@@ -200,11 +203,13 @@
     text-align: center;
     font-size: 14px;
     line-height: 1;
-    padding: 4px 2px 2px;
+    padding: 3px 2px 2px;
     background: $darkBlue;
     color: #fff;
+    font-weight: bold;
     &--yellow {
         background: $yellow;
+        color: $darkBlue;
     }
 }
 
@@ -302,6 +307,7 @@
             }
              .btn-expiration{
                 font-size: 12px;
+                margin-left: 0px;
              }
         }
     }
@@ -316,7 +322,7 @@
                     padding: 5px 10px;
                     &:nth-of-type(1) {
                         text-align: left;
-                        padding-left: 22px;
+                        padding-left: 20px;
                         width: auto;
                     }
                     &:nth-of-type(2) {
@@ -363,7 +369,7 @@
                     white-space: nowrap;
                     &:nth-of-type(1) {
                         text-align: left;
-                        padding-left: 22px;
+                        padding-left: 12px;
                         width: auto;
                     }
                     &:last-child {

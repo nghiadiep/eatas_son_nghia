@@ -7,6 +7,7 @@
 <div class="edit-info-member-page" id="user-editor">
 
     <h2 class="page-title">会員情報確認・編集</h2>
+    <div class="content-center">
     <div class="block-form edit-info-member">
         <h2 class="title-center">
             <span>ユーザー情報</span>
@@ -1145,6 +1146,7 @@
         </div>
     </div>
     <!--/.block-form__sec-->
+    </div>
 </div>
 
 <script type="text/javascript">

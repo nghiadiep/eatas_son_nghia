@@ -75,8 +75,11 @@
                 }
             }
         }
+        .block-botttom {
+            text-align: center;
+        }
+        .block-botttom a.btn {
+            width: 300px;
+        }
     }
-}
-.block-botttom a.btn {
-    width: 300px;
 }
