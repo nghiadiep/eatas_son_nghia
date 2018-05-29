@@ -581,4 +581,12 @@ textarea{
         display: block;
     }
   }
-  
+@media (min-width: 768px){
+    .form-group{
+        margin-bottom: 33px;
+    }
+    .form-control, .select-group label, .input-group{
+        height: 40px;
+        font-size: 18px;
+    }
+}
