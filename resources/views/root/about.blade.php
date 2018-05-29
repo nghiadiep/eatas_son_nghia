@@ -1,10 +1,11 @@
 @extends('layouts.user.default')
 
 @section('content')
-
+<h2 class="page-title">EATASからのお知らせ</h2>
+<div class="content-center">
 <div class="whats-page">
   <div class="whats">
-    <div class="whats__mainvisual mainvisual">
+    <div class="whats__mainvisual">
       <div class="mainvisual__text">
         <p>飲食店成功のカギに出会える</p>
       </div>
@@ -39,7 +40,7 @@
       <div class="whats__shadow-image">
         <img src="{{asset('images/img_whats_point_1.png')}}" alt="Point 1">
       </div>
-      <p class="pt17 pb12 fs12">EATAS編集部が独自に取材、編集した、飲食店経営にすぐ活用できる情報をわかりやすい文章でお届けします。</p>
+      <p class="pt17 pb12 whats__shadow-title">EATAS編集部が独自に取材、編集した、飲食店経営にすぐ活用できる情報をわかりやすい文章でお届けします。</p>
       <a class="btn btn--block btn--blue-w-text-shadow" href="{{route('root.index')}}">EATASの記事を読む</a>
     </div>
     <div class="point-block">
@@ -56,12 +57,12 @@
       <div class="whats__shadow-image">
         <img src="{{asset('images/img_whats_point_2.png')}}" alt="Point 2">
       </div>
-      <p class="pt15 pb10 fs12">抱えている悩みや課題はあるけれど、どの記事を読めばいいのかわからない…。
+      <p class="pt15 pb10 whats__shadow-title">抱えている悩みや課題はあるけれど、どの記事を読めばいいのかわからない…。
         <br>そんな方は、
         <strong>EATASコンシェルジュ</strong>に電話でご相談ください。<br/>
         ※受付時間は<strong>平日10時から19時まで</strong>となります。
       </p>
-      <p class="pb10 fs12">あなたのコンシェルジュとなってご希望する内容についての記事やサービス商品の資料や情報の案内をいたします。</p>
+      <p class="pb10 whats__shadow-title">あなたのコンシェルジュとなってご希望する内容についての記事やサービス商品の資料や情報の案内をいたします。</p>
       <a href="tel:{{ config('app.company_tel') }}" class="btn btn--block btn--blue-w-text-shadow">EATASコンシェルジュに電話する</a>
     </div>
     <!-- /.point-block -->
@@ -79,13 +80,13 @@
       <div class="whats__shadow-image">
         <img src="{{asset('images/img_whats_point_3.png')}}" alt="Point 3">
       </div>
-      <p class="pt15 pb10 fs12">気になる商品に関連した商材の資料もまとめて請求できるのでとっても便利。</p>
-      <p class="pb10 fs12">PDFと書かれている資料は、資料請求ボタンを押すとすぐにパソコンやお手元のスマートフォンで見ることができます※。
+      <p class="pt15 pb10 whats__shadow-title">気になる商品に関連した商材の資料もまとめて請求できるのでとっても便利。</p>
+      <p class="pb10 whats__shadow-title">PDFと書かれている資料は、資料請求ボタンを押すとすぐにパソコンやお手元のスマートフォンで見ることができます※。
         <br>※ 無料の会員登録が必要です。</p>
-      <p class="pb10 fs12">もちろん郵送で資料をお届けすることも可能です。</p>
-      <p class="pb15 fs12">さらに、買い物にも使える<strong>EATASポイント</strong>が貯まる！</p>
+      <p class="pb10 whats__shadow-title">もちろん郵送で資料をお届けすることも可能です。</p>
+      <p class="pb15 whats__shadow-title">さらに、買い物にも使える<strong>EATASポイント</strong>が貯まる！</p>
       <ul class="point-question mb12">
-        <li class="pb06 mb10 fs14-ipt">
+        <li class="pb06 mb10 fs14">
           <h3>EATASポイントって？</h3>
         </li>
         <li class="pb07 mb10">資料請求やお問い合わせでポイントを貯めることができます<span class="red">※</span></li>
@@ -100,7 +101,7 @@
         <h2>よくある質問</h2>
       </div>
     </div>
-    <p class="mt12 mb10 fs12">困っていることがあるけれどどこに相談すれば良いかわからない</p>
+    <p class="mt12 mb10 whats__shadow-title">困っていることがあるけれどどこに相談すれば良いかわからない</p>
     <div class="whats__full-width pl12 pr12 yellow-background cyan-dash-bottom-border">
       <div class="whats__yellow-point">
         <div class="yellow-point__icon">
@@ -111,7 +112,7 @@
         </div>
       </div>
     </div>
-    <p class="mt12 mb10 fs12">なるべく効率よく情報収集を行いたい</p>
+    <p class="mt12 mb10 whats__shadow-title">なるべく効率よく情報収集を行いたい</p>
     <div class="whats__full-width pl12 pr12 yellow-background cyan-dash-bottom-border">
         <div class="whats__yellow-point">
           <div class="yellow-point__icon">
@@ -122,7 +123,7 @@
           </div>
         </div>
       </div>
-    <p class="mt12 mb10 fs12">なるべく効率よくベストな改善策を見つけたい</p>
+    <p class="mt12 mb10 whats__shadow-title">なるべく効率よくベストな改善策を見つけたい</p>
     <div class="whats__full-width pl12 pr12 yellow-background cyan-dash-bottom-border">
         <div class="whats__yellow-point">
           <div class="yellow-point__icon">
@@ -135,7 +136,7 @@
       </div>
       <a class="btn btn--block btn--blue-w-text-shadow mt12 mb25" href="{{route('root.faq')}}">よくある質問をもっと読む</a>
   </div>
-
+  </div>
 </div>
 
 @endsection

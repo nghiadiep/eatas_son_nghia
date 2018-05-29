@@ -1,8 +1,5 @@
 @charset "utf-8";
 .qa-page{
-    .page-title{
-        margin-bottom: 0;
-    }
     .block-accordion {
         margin-left:-10px;
         margin-right: -10px;
@@ -44,9 +41,7 @@
             &.hover {
                 background: #fff;
                 text-decoration: none;
-            }
-        
-        
+            }        
         }
         &__content {
             padding: 10px;
@@ -110,7 +105,57 @@
                 }
             }
         }
-
     }
-   
+}
+
+@media (min-width: 767px) {
+    .qa-page {
+        & .sub-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            &:before {
+                margin-top: -14px;
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+                border-left: 7px solid #fbe43c;
+            }
+            &:after {
+                height: 27px;
+                margin-top: -15px;
+            }
+        }
+        .title-center {
+            margin-top: 0;
+        }
+        .block-accordion {
+            margin-left: 0;
+            margin-right: 0;
+            &__content {
+                font-size: 18px;
+                line-height: 30px;
+
+                & a {
+                    text-decoration: underline;
+                    color: #06C;
+                }
+            }
+        }
+        .block-mypage {
+            margin-left: 0;
+            margin-right: 0; 
+            &__menu li {
+                >a {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+        .block-accordion__title {
+            font-size: 18px;
+            padding: 14px 10px;
+        }
+        .sidebar .sidebar-register {
+            margin-top: 10px;
+        }
+    }
 }

@@ -174,3 +174,161 @@
         color: #f00;
     }
 }
+
+@media (min-width: 768px) {
+    .whats-page {
+        a.btn {
+            width: 463px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 24px;
+        }
+        .point-block {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+        .whats {
+            &__mainvisual {
+                @include background-image('../../images/img_whats_mainvisual_dsk.jpg', no-repeat, cover, top);
+                margin-bottom: 30px;
+            }
+            &__look {
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                margin-top: 115px;
+                position: relative;
+                text-align: center;
+                .step-img{
+                    img{
+                        width: 75%;
+                    }
+                }
+                & .whats__stripes-title {
+                    position: absolute;
+                    top: -87px;
+                    width: 100%;
+                    text-align: center;
+                    height: 57px;
+                    line-height: 57px;
+                    font-size: 24px;
+                }
+            }
+            &__stripes-title {
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                font-size: 24px
+            }
+            &__paragraphs {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            &__big-title {
+                width: unset;
+                align-items: center;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            &__steps-image {
+                margin-top: 0;
+                position: relative;
+                text-align: center;
+                margin-bottom: 35px;
+                img {
+                    width: 68%;
+                    margin-top: -55px;
+                    margin-left: 100px;
+                }
+            }
+            &__shadow-image {
+                width: 80%;
+                margin: 0 auto;
+            }
+            &__shadow-title {
+                font-size: 18px;
+                text-align: center;
+                padding-bottom: 0;
+                margin-bottom: 28px;
+            }
+            &__full-width {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &__yellow-point {
+                padding: 20px 35px;
+            }
+        }
+        .yellow-point {
+            &__icon {
+                display: inline-block;
+                vertical-align: middle;
+                & img {
+                    width: 22px;
+                }
+            }
+            &__text {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+            }
+        }
+        .big-title {
+            &__number {
+                width: unset;
+                vertical-align: middle;
+                font-size: unset;
+                img[alt="Number one"] {
+                    width: 25px;
+                    vertical-align: middle;
+                }
+                img[alt="Number two"] {
+                    width: 48px;
+                    vertical-align: middle;
+                }
+                img[alt="Number three"] {
+                    width: 46px;
+                    vertical-align: middle;
+                }
+            }
+            &__text {
+                text-align: left;
+                font-size: 36px;
+            }
+        }
+        .stripes-title {
+            &--yellow {
+                &:after {
+                    content: "";
+                    background: #fdf8ce;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                }
+            }
+        }
+        .mainvisual {
+            &__text {
+                display: none;
+            }
+            &__logo {
+                display: none;
+            }
+        }
+        .point-question {
+            padding: 27px 53px 27px;
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+}

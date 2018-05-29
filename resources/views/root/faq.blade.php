@@ -4,6 +4,7 @@
 
 <div class="qa-page">
     <h2 class="page-title">よくある質問</h2>
+    <div class="content-center">
     <h2 class="title-center mt12 mb09-ipt">
         <span>カテゴリから探す</span>
     </h2>
@@ -43,6 +44,5 @@
     </div>
     @endforeach
 </div>
-
-
 @endsection
+</div>

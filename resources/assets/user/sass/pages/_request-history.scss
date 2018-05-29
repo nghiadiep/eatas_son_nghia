@@ -103,9 +103,6 @@
 				margin-top: 0;
 				padding-bottom: 8px;
 				margin-bottom: 12px;
-				&:last-child {
-					margin-bottom: 0;
-				}
 	        	& span {
 		            display: block;
 		            font-weight: normal;
@@ -193,5 +190,84 @@
 				}
 	        }
         }
+	}
+}
+
+@media (min-width: 768px) {
+	.request-history-page {
+		& .item-box {
+			&__head {
+			    & .item-box__des {
+				    padding: 30px 0;
+			    }
+			    & .item-box__arrow {
+				    width: 47px;
+				    font-size: 40px;
+				    padding: 0;
+			    }
+	        }
+			&__content {
+	        	& .item-box__date {
+					font-size: 18px;
+				    padding: 0 10px;
+				    & .text {
+				    	line-height: 45px;
+				    }
+				    & .date {
+				    	line-height: 45px;
+				    	font-size: 10px;
+				    }
+	        	}
+	        	& .item-box__company {
+	        		margin-top: 50px;
+					& .item-box__name {
+						font-size: 18px;
+						& .des {
+						    margin-top: 10px;
+						    margin-bottom: 20px;
+						    font-weight: normal;
+						}
+		        	}
+	        	}
+	        }
+	        & .group_btn {
+	        	& .clearfix {
+	        		margin-bottom: 20px;
+	        	}
+				& .btn {
+					width: 100%;
+					font-size: 14px;
+					line-height: 22px;
+					margin-bottom: 0;
+					padding-right: 20px;
+					padding-left: 20px;
+			        & span:last-child {
+			        	font-weight: bold;
+		        	    font-size: 18px;
+			        }
+			        &--txt__left {
+			        	text-align: left;
+			        }
+		        }
+	        }
+		}
+	}
+	.row {
+		box-sizing: border-box;
+		margin-right: -15px;
+		margin-left: -15px;
+		&:before, &:after {
+			display: table;
+    		content: "";
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	.col-2 {
+		float: left;
+		width: 50%;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }

@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div class="content-center">
 <div class="block-art-detail" id="article-base">
     <div class="block-art-detail__category clearfix">
         <span class="block-art-detail__category__text">
@@ -137,16 +138,18 @@
 
 <h2 class="block-home-list__title">関連記事</h2>
 
-<div id="related-articles" v-inview:leave="hideFooter" style="padding-top: 96px; margin-top: -96px;">
+<div id="related-articles" v-inview:leave="hideFooter" style="padding-top: 96px; margin-top: -96px;" class="block-home-blog">
   <div v-inview:enter="showFooter">
-    <div v-for="article in articles">
-      <article-cell v-bind:article="article" :authed="authed" />
-    </div>
-    <div class="block-botttom" v-if="canMore && page <= 1">
-        <a v-on:click="readMore" class="btn btn--block btn--default">新着記事をもっと読む</a>
-    </div>
-    <div class="block-botttom" v-if="canMore && page > 1">
-        <a v-inview:enter="readMore"></a>
+    <div class="block-home-blog__inner">
+      <div v-for="article in articles">
+        <article-cell v-bind:article="article" :authed="authed" />
+      </div>
+      <div class="block-botttom" v-if="canMore && page <= 1">
+          <a v-on:click="readMore" class="btn btn--block btn--default">新着記事をもっと読む</a>
+      </div>
+      <div class="block-botttom" v-if="canMore && page > 1">
+          <a v-inview:enter="readMore"></a>
+      </div>
     </div>
   </div>
 </div>
@@ -211,5 +214,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-
+</div>
 @endsection
