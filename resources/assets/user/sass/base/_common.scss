@@ -231,6 +231,29 @@
         float: right;
         width: 31.25%;
     }
+    .sub-title {
+        font-size: 18px;
+        line-height: 1;
+        padding-bottom: 5px;
+        padding-left: 27px;
+        margin-bottom: 20px;
+        &:after{
+            height: 28px;
+            margin-top: -18px;
+        }
+        &:before{
+            margin-top: -18px;
+            border-top: 14px solid transparent;
+            border-bottom: 14px solid transparent;
+            border-left: 10px solid #fbe43c;
+        }
+    }
+    .input-placeholder>label>span{
+        font-size: 18px !important;
+    }
+    .input-placeholder>label>small{
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 767px) {
