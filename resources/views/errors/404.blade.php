@@ -1,7 +1,7 @@
 @extends('layouts.user.default')
 
 @section('content')
-
+<div class="content-center error-page">
 <div class="block-error-page block-error-page--404">
     <div class="block-error-page__des">
         <img src="{{asset('images/error_page/404_sp.png')}}" alt="404 ERROR">
@@ -29,7 +29,7 @@
     </div>
     <!--/.block-home-blog__read-more-->
 </div>
-
+</div>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
     let vm = new Vue( {

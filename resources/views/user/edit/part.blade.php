@@ -81,8 +81,11 @@
                 ])
                 <!--/.form-group-->
                 <div class="block-note">
-                    <p class="block-note__txt">
+                    <p class="block-note__txt sp">
                         新しいメールアドレスに、登録用アドレスを記載したメールを送信します。メール内の更新用リンクにアクセスしてメールアドレスの変更を行ってください。
+                    </p>
+                    <p class="block-note__txt pc">
+                        ※ 新しいメールアドレスに、登録用アドレスを記載したメールを送信します。メール内の更新用リンクにアクセスしてメールアドレスの変更を行ってください。
                     </p>
                     <p class="pl15">
                         <a href="{{route('root.faq')}}" title="メールが届かない場合" class="text-underline">メールが届かない場合</a>

@@ -20,6 +20,10 @@
 				left: 0;
 			}
 		}
+		
+		&.pc {
+			display: none;
+		}
 	}
 	.block-form{
 		.sub-title{
@@ -148,6 +152,30 @@
 		height: 45px;
 	}
 	.edit-info-member-page {
+		.block-note{
+			margin-bottom: 20px;
+			&__txt {
+				font-size: 18px;
+				line-height: 27px;
+				padding-left: 0px;
+				&::before {
+					content: none;
+				}
+			}
+			.text-underline {
+				font-size: 18px;
+				line-height: 27px;
+			}
+			&.sp {
+				display: none;
+			}
+			&.pc {
+				display: block;
+			}
+			p.pl15 {
+				padding-left: 0px;
+			}
+		}
 		.block-form {
 			.title-center {
 				font-size: 24px;
@@ -160,8 +188,9 @@
 				margin-bottom: 18px;
 			}
 			&__sec {
+				padding-bottom: 0px;
 				.form-group {
-					margin-bottom: 30px;
+					margin-bottom: 18px;
 					p {
 						font-size: 18px;
 						line-height: 32px;
@@ -186,6 +215,7 @@
 						}
 					}
 					.row-btn {
+						margin-bottom: 30px;
 						p {
 							button.btn {
 								width: 100%;
