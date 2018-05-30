@@ -679,6 +679,13 @@
 @media (min-width: 768px) {
 
     .block-home-blog {
+        .block-botttom {
+            width: 100%;
+            text-align: center;
+            .btn {
+                width: 300px;
+            }
+        }
         &__inner {
             margin-left: -6px;
             margin-right: -6px;

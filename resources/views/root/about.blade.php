@@ -66,7 +66,7 @@
       <a href="tel:{{ config('app.company_tel') }}" class="btn btn--block btn--blue-w-text-shadow">EATASコンシェルジュに電話する</a>
     </div>
     <!-- /.point-block -->
-    <div class="point-block pb40-ipt">
+    <div class="point-block pb40-ipt number-three">
       <div class="whats__big-title big-title">
         <div class="big-title__number">
           <img src="{{asset('images/img_whats_number_three.png')}}" alt="Number three">
@@ -80,11 +80,13 @@
       <div class="whats__shadow-image">
         <img src="{{asset('images/img_whats_point_3.png')}}" alt="Point 3">
       </div>
+      <div class="text-pc">
       <p class="pt15 pb10 whats__shadow-title">気になる商品に関連した商材の資料もまとめて請求できるのでとっても便利。</p>
       <p class="pb10 whats__shadow-title">PDFと書かれている資料は、資料請求ボタンを押すとすぐにパソコンやお手元のスマートフォンで見ることができます※。
         <br>※ 無料の会員登録が必要です。</p>
       <p class="pb10 whats__shadow-title">もちろん郵送で資料をお届けすることも可能です。</p>
       <p class="pb15 whats__shadow-title">さらに、買い物にも使える<strong>EATASポイント</strong>が貯まる！</p>
+      </div>
       <ul class="point-question mb12">
         <li class="pb06 mb10 fs14">
           <h3>EATASポイントって？</h3>
@@ -101,7 +103,7 @@
         <h2>よくある質問</h2>
       </div>
     </div>
-    <p class="mt12 mb10 whats__shadow-title">困っていることがあるけれどどこに相談すれば良いかわからない</p>
+    <p class="mt12 mb10 whats__shadow-title text-pc">困っていることがあるけれどどこに相談すれば良いかわからない</p>
     <div class="whats__full-width pl12 pr12 yellow-background cyan-dash-bottom-border">
       <div class="whats__yellow-point">
         <div class="yellow-point__icon">
@@ -112,7 +114,7 @@
         </div>
       </div>
     </div>
-    <p class="mt12 mb10 whats__shadow-title">なるべく効率よく情報収集を行いたい</p>
+    <p class="mt12 mb10 whats__shadow-title text-pc">なるべく効率よく情報収集を行いたい</p>
     <div class="whats__full-width pl12 pr12 yellow-background cyan-dash-bottom-border">
         <div class="whats__yellow-point">
           <div class="yellow-point__icon">
@@ -123,7 +125,7 @@
           </div>
         </div>
       </div>
-    <p class="mt12 mb10 whats__shadow-title">なるべく効率よくベストな改善策を見つけたい</p>
+    <p class="mt12 mb10 whats__shadow-title text-pc">なるべく効率よくベストな改善策を見つけたい</p>
     <div class="whats__full-width pl12 pr12 yellow-background cyan-dash-bottom-border">
         <div class="whats__yellow-point">
           <div class="yellow-point__icon">
@@ -134,7 +136,7 @@
           </div>
         </div>
       </div>
-      <a class="btn btn--block btn--blue-w-text-shadow mt12 mb25" href="{{route('root.faq')}}">よくある質問をもっと読む</a>
+      <a class="btn btn--block btn--blue-w-text-shadow mt12 mb25 last-pc" href="{{route('root.faq')}}">よくある質問をもっと読む</a>
   </div>
   </div>
 </div>

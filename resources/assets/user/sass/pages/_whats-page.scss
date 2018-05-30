@@ -177,6 +177,9 @@
 
 @media (min-width: 768px) {
     .whats-page {
+        .last-pc {
+            margin-top: 30px;
+        }
         a.btn {
             width: 463px;
             display: block;
@@ -187,6 +190,24 @@
         .point-block {
             margin-bottom: 30px;
             padding-bottom: 30px;
+            &.number-three {
+                div.text-pc {
+                    margin-top: 12px;
+                    margin-bottom: 35px;
+                }
+                p.whats__shadow-title {
+                    margin-bottom: 0px;
+                    padding-top: 10px;
+                }
+                ul.point-question {
+                    margin-bottom: 20px;
+                }
+            }
+            
+        }
+        p.text-pc {
+            text-align: left;
+            padding-left: 13%;
         }
         .whats {
             &__mainvisual {
@@ -232,6 +253,7 @@
                 text-align: center;
                 margin-right: auto;
                 margin-left: auto;
+                margin-bottom: 25px;
             }
             &__steps-image {
                 margin-top: 0;
@@ -252,6 +274,7 @@
                 font-size: 18px;
                 text-align: center;
                 padding-bottom: 0;
+                padding-top: 22px;
                 margin-bottom: 28px;
             }
             &__full-width {
