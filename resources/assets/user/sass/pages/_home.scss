@@ -123,6 +123,9 @@
     }
     &__read-more {
         margin-top: -4px;
+        .btn {
+            display: none;
+        }
     }
     &__date {
         display: block;
@@ -720,11 +723,12 @@
             text-align: center;
             .btn{
                 min-width: 280px;
-                display: none;
             }
         }
         &__header {
-            font-size: 22px;
+            font-size: 13px;
+            line-height: 20px;
+            margin-bottom: 15px;
             height: auto;
             @include cutrow(2);
         }

@@ -46,7 +46,7 @@
                 <div class="top__menu">
                     <div class="clearfix">
                         <ul>
-                            <li><a href="{{ route('root.faq') }}">よくある質問</a></li>
+                            <li><a href="{{ route('root.faq') }}">良くある質問</a></li>
                             <li>｜</li>
                             <li><a href="{{ route('contact.add') }}">お問い合わせ</a></li>
                             <li>｜</li>

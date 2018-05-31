@@ -27,7 +27,7 @@
                                 <li>
                                     <a href="{{route('root.faq')}}">
                                         <i class="fa fa-question-circle"></i>
-                                        <span>よくある質問</span>
+                                        <span>良くある質問</span>
                                     </a>
                                 </li>
                             </ul>
@@ -198,7 +198,7 @@
                 <a onclick="onAuthedAction()">本棚を見る</a>
             </li>
             <li>
-                <a href="{{route('root.faq')}}">よくある質問</a>
+                <a href="{{route('root.faq')}}">良くある質問</a>
             </li>
             <li>
                 <a href="{{route('contact.add')}}">お問い合わせ</a>

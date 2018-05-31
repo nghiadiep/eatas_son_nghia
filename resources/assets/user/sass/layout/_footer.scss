@@ -318,6 +318,9 @@
     .footer__top .footer-link ul>li{
         margin-bottom: 2px;
     }
+    .footer__bottom{
+        margin-top: 7px;
+    }
 }
 
 @media (max-width: 416px) {
@@ -326,10 +329,7 @@
 
 @media (max-width: 375px) {
     .footer{
-        padding-top: 6px;
-    }
-    .footer__bottom{
-        margin-top: 2px;
+        padding-top: 5px;
     }
     .footer__top .footer-link ul>li{
         margin-bottom: 2px;
