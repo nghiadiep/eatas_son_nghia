@@ -725,8 +725,8 @@
         }
         &__header {
             font-size: 22px;
-            height: 150px;
-            @include cutrow(initial);
+            height: auto;
+            @include cutrow(2);
         }
         &__txt {
             font-size: 13px;
