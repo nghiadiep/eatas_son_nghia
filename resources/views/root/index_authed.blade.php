@@ -95,53 +95,11 @@
             <div v-for="article in articles">
                 <article-cell v-bind:article="article" :authed="false" />
             </div>
-            <div class="block-home-blog__read-more" v-if="canMore && page <= 1">
-                <a v-on:click="readMore" class="btn btn--block btn--default">新着記事をもっと読む</a>
-            </div>
-            <div class="block-home-blog__read-more" v-if="canMore && page > 1">
-                <a v-inview:enter="readMore"></a>
-            </div>
-            <!--/.block-home-blog__read-more-->
+            
         </div>
     </div>
 </div>
-<!-- <section class="block-home-list top-page" id="clips-list">
-    <div v-if="clips.length > 0">
-        <h2 class="block-home-list__title">あとで読む</h2>
-        <ul>
-            <li v-for="clip in clips">
-                <clip-chip v-bind:clip="clip" v-bind:authed="true" @delete-event="onDelete" />
-            </li>
-        </ul>
-        <a href="{{route('user.clips')}}" class="btn btn--block btn--default">あとで読む一覧を見る</a>
-    </div>
-    <div class="block-clipnone" v-else>
-        <div class="clipnone-table">
-            <div class="clipnone-table__cell">
-                <div class="clipnone-content">
-                    <div class="clipnone-content__inner">
-                        <h2 class="clipnone-content__title">「あとで読む」が<br>登録されていません</h2>
-                        <p>「あとで読む」を押してみてください。<br>EATASには便利な機能がたくさんあります。</p>
-                        <div class="clipnone-content__bottom"><a href="{{route('root.about')}}" class="btn btn--block btn--default">EATASの使い方を見る</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<div class="block-home-blog" id="articles-list">
-    <div v-for="article in articles">
-        <article-cell @clip-event="onReloadClip" v-bind:article="article" :authed="true" />
-    </div>
-    <div class="block-home-blog__read-more" v-if="canMore && page <= 1">
-        <a v-on:click="readMore" class="btn btn--block btn--default">新着記事をもっと読む</a>
-    </div>
-    <div class="block-home-blog__read-more" v-if="canMore && page > 1">
-        <a v-inview:enter="readMore"></a>
-    </div>
-    
-</div> -->
 <script type="text/javascript">
 
 document.addEventListener('DOMContentLoaded', function() {

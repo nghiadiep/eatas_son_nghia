@@ -6,6 +6,7 @@
                 <ul>
                     <li><a href="">会員登録するとできること</a></li>
                     <li><a href="">設定方法／よくある質問</a></li>
+                    <li><a href="">お知らせ</a></li>
                 </ul>
             </div>
         </div>

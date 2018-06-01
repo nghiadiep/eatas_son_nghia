@@ -28,6 +28,9 @@
             <li>
                 <a href="{{route('contact.add')}}" title="お問い合わせ">お問い合わせ</a>
             </li>
+            <li>
+                <a href="{{route('root.notices')}}" title="お知らせ">お知らせ</a>
+            </li>
         </ul>
     </div>
     <div class="sidebar__box">

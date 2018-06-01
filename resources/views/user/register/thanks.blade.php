@@ -2,9 +2,9 @@
 
 @section('content')
 
-
-<div class="main__content member-registration-page">
+<div class="main__content member-registration-page register-page clearfix">
     <h2 class="page-title">新規会員登録</h2>
+    <div class="content-center">
     <div class="block-form">
         <nav class="block-form__step">
             <ol>
@@ -24,15 +24,15 @@
             <h3 class="reg-step2__title">登録が完了しました</h3>
             
             @if(isset($user["email"]))
-            <p>下記のメールアドレスに、登録用アドレスを記載したメールを送信しました。</p>
+            <p class="reg-step2__des">下記のメールアドレスに、登録用アドレスを記載したメールを送信しました。</p>
             <p class="reg-step2__email">
                 {{$user["email"]}}
             </p>
-            <p class="reg-step2__text">メール内に記載されている登録用アドレスにアクセスしてメールアドレスの認証を行ってください。</p>
+            <p class="reg-step2__text">メール内に記載されている登録用アドレスにアクセスして本登録<br>を行ってください。</p>
             <p class="reg-step2__text2">
                 <a href="{{route('root.faq')}}" class="text-underline">メールが届かない場合</a>
             </p>
-            <div class="reg-step2__btn-bottom">
+            <div class="reg-step2__btn-bottom block-form__btn-bottom">
                 <a href="{{route('root.index')}}" class="btn btn--block btn--default">トップページへ戻る</a>
             </div>
             <!--/.password-forgotten__success__bottom-->
@@ -44,3 +44,4 @@
 </div>
 
 @endsection
+</div>

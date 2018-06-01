@@ -203,6 +203,9 @@
             <li>
                 <a href="{{route('contact.add')}}">お問い合わせ</a>
             </li>
+            <li>
+                <a href="{{route('root.notices')}}">お知らせ</a>
+            </li>
         </ul>
     </div>
     <!--/.nav-header-menu-->

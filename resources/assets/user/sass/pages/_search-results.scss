@@ -73,6 +73,7 @@
 			width: 25px;
 		}
 	}
+
 }
 @media (min-width: 768px) {
 	.sidebar .sidebar-register {
@@ -115,6 +116,37 @@
 			}
 			&__arrow {
 				width: 47px;
+			}
+			.block-option {
+				padding-top: 0px;
+				&.btn-action {
+					ul {
+						margin-left: -2px;
+						margin-right: -2px;
+						&::after {
+							content: " ";
+							display: block;
+							clear: both;
+						}
+						li {
+							float: left;
+							padding-left: 2px;
+							padding-right: 2px;
+							margin-left: 0px;
+							margin-right: 0px;
+							width: 50%;
+							height: auto;
+							a {
+								padding-top: 0px;
+								&::before {
+									width: 45px;
+									height: 45px;
+									margin-left: 1px;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		.group-radio-list > li > label span {

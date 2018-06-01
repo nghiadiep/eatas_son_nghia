@@ -2,8 +2,9 @@
 
 @section('content')
 
-
+<div class="register-page clearfix">
 <h2 class="page-title">新規会員登録</h2>
+<div class="content-center">
 <div class="block-form">
     <nav class="block-form__step">
         <ol>
@@ -88,13 +89,16 @@
             <!--/.checkbox-group-->
         </div>
         <!--/.block-form__sec-->
-        <div class="block-form__btn-bottom">
-            <button type="submit" class="btn btn--block btn--off">新規会員登録する</button>
+        <div class="block-form__sec">
+            <div class="block-form__btn-bottom">
+                <button type="submit" class="btn btn--block btn--off">新規会員登録する</button>
+            </div>
         </div>
         <input type="hidden" name="inquiring_product_id" class="inquiering_product" value="{{$inquiring_product_id}}" />
         <!--/.block-form__btn-bottom-->
     </form>
 </div>
 <!--/.block-form-->
-
+</div>
 @endsection
+</div>

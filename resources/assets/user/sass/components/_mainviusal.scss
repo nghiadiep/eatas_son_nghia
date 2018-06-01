@@ -147,6 +147,7 @@
                     height: 423px;
                 }
                 &__des {
+                    top: 65%;
                     bottom: -27px;
                     background: #EFF4F7;
                     color: #333;
@@ -187,6 +188,8 @@
                     content: none;
                     z-index: -1;
                 }
+                .mainvisual__slider-main__item__des {
+                }
             }
         }
         .slick-dots{
@@ -213,6 +216,7 @@
             font-weight: bold;
             color: #001c25;
             margin-bottom: 18px;
+            @include cutrow(2);
             &:before {
                 content: none;
             }
@@ -221,6 +225,7 @@
             display: block;
             font-size: 14px;
             line-height: 21px;
+            @include cutrow(3);
         }
     }
     /***End Description***/

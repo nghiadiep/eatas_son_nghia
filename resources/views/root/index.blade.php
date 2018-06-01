@@ -31,21 +31,6 @@
             </div>
         </div>
     </div>
-    <!-- <section class="block-home-list" id="clips-list">
-        <div class="block-home-blog-list__inner clearfix">
-            <div class="block-clipnone no-auth">
-                <div class="clipnone-table">
-                    <div class="clipnone-table__cell">
-                        <div class="clipnone-content">
-                            <div class="clipnone-content__inner">
-                                <div class="clipnone-content__bottom"><a href="{{route('root.about')}}" class="btn btn--block btn--default">EATASの使い方を見る</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <hr class="hr sp">
     <div class="block-home-blog" id="articles-list">
         <h2 class="block-home-list__title"><span>新着記事</span></h2>
@@ -53,13 +38,7 @@
             <div v-for="article in articles">
                 <article-cell v-bind:article="article" :authed="false" />
             </div>
-            <div class="block-home-blog__read-more" v-if="canMore && page <= 1">
-                <a v-on:click="readMore" class="btn btn--block btn--default">新着記事をもっと読む</a>
-            </div>
-            <div class="block-home-blog__read-more" v-if="canMore && page > 1">
-                <a v-inview:enter="readMore"></a>
-            </div>
-            <!--/.block-home-blog__read-more-->
+            
         </div>
     </div>
 </div>

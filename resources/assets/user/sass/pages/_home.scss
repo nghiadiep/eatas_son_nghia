@@ -123,9 +123,6 @@
     }
     &__read-more {
         margin-top: -4px;
-        .btn {
-            display: none;
-        }
     }
     &__date {
         display: block;
@@ -245,7 +242,7 @@
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 6px;
-        @include cutrow(1);
+        @include cutrow(2);
         line-height: 1.8;
     }
     &__footer {
@@ -735,6 +732,9 @@
         &__txt {
             font-size: 13px;
         }
+        &__list {
+            font-size: 13px;
+        }
         
     }
     .block-home-list {
@@ -777,6 +777,19 @@
         }
         &__txt{
             display: none;
+        }
+        &__footer {
+            &__btn-read-later,&__btn-bookshelf {
+                width: 42px;
+                height: 42px;
+                &::before {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+            &__center {
+                top: 10%;
+            }
         }
     }
 }
