@@ -222,3 +222,91 @@
 	    margin-bottom: -6px;
 	}
 }
+
+@media (min-width: 768px){
+	.document-request-page .item-box .group_btn .btn{
+		display: block;
+	}
+	.block-inquiries-bottom{
+		text-align: center;
+		margin-top: 50px;
+		.btn{
+			width: 300px;
+			display: inline-block;
+		}
+	}
+	.document-request-page{
+		.block-form__notice{
+			font-size: 18px;
+			&.mt18{
+				margin-top: 8px !important;
+			}
+			&.mb24-ipt{margin-bottom: 44px !important;}
+		}
+
+		.title-center,.item-box__des_title{
+			font-size: 18px;
+		}
+		.item-box__content .item-box__date{
+			font-size: 18px;
+			display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    align-items: center;
+			.date{
+				font-size: 10px;
+				margin-left: auto;
+			}
+		}
+		.item-box__head .item-box__des{
+			padding-top: 28px !important;
+			padding-bottom: 22px !important;
+		}
+		.item-box__head .item-box__arrow{
+			font-size: 40px;
+			width: 46px;
+			position: relative;
+			a{
+				&:after{
+					content:"";
+					position: absolute;
+					top:0;
+					left:0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&:hover{
+				a{
+					color: rgba(#001925, 0.5);
+				}
+			}
+		}
+		.item-box__content .item-box__date .text{
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.item-box__content .item-box__company{
+			margin-top: 48px;
+		}
+		.item-box__content .item-box__company .item-box__name {
+			font-size: 18px;
+		}
+		 .item-box__content .item-box__company .item-box__name .des{
+		 	margin-bottom: 15px;
+		 }
+		 .item-box .group_btn .btn{
+		 	margin-bottom: 20px;
+		 	&__head{
+		 		font-size: 14px;
+		 	}
+		 	span{
+		 		text-align: center;
+		 	}
+		 	&:hover{
+		 		opacity: 0.6;
+		 	}
+		 }
+
+	}
+}

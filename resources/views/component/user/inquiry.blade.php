@@ -43,7 +43,7 @@
                 </p>
             </div>
             <!--/.form-group-->
-            <div class="form-group">
+            <div class="form-group form-group-btn">
                 <button type="button" class="btn btn--block btn--yellow" onclick="onAutoAddress('post_code','prefecture_id','address', '#post_code_error__1', '{{route('api.utils.post_codes')}}')">
                     郵便番号から住所を入力する
                 </button>
@@ -208,7 +208,7 @@
                 </p>
             </div>
             <!--/.form-group-->
-            <div class="form-group">
+            <div class="form-group form-group-btn">
                 <button type="button" class="btn btn--block btn--yellow" onclick="onAutoAddress('post_code','prefecture_id','address', '#post_code_error__2', '{{route('api.utils.post_codes')}}')">
                     郵便番号から住所を入力する
                 </button>

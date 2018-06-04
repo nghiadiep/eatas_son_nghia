@@ -6,7 +6,7 @@
 <div class="content-center">
     <div class="block-form">
         <p class="block-form__notice mb18-ipt">
-            資料をお届けする先の登録と、簡単なアンケートへご協力ください。ddddd
+            資料をお届けする先の登録と、簡単なアンケートへご協力ください。
         </p>
         <section>
             <h2 class="title-center">
@@ -15,9 +15,7 @@
             <form method="POST" action="{{route('user.inquiries.edit', ['product_id' => $product->id])}}" class="checkable-submit">
                 {{ csrf_field() }}
                 @include("component.user.error")
-                @include("component.user.inquiry", [
-                    "user" => $user
-                ])
+                @include("component.user.inquiry")
                 <div class="block-form__btn-bottom">
                     <button type="submit" class="btn btn--block">お問い合わせを送信する</button>
                 </div>

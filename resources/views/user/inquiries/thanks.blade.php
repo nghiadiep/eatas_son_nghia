@@ -5,8 +5,7 @@
 <h2 class="page-title mb18-ipt">資料請求</h2>
 <div class="block-form document-request-page">
     <p class="block-form__notice mt18 mb24-ipt">
-        資料を請求しました。
-        <br> 下記よりご確認ください。
+        資料を請求しました。<br class="pc">下記よりご確認ください。
     </p>
     <section>
         <h2 class="title-center">
@@ -89,7 +88,7 @@
                     <!-- /.item-box -->
                 </li>
             </ul>
-            <a href="{{route('user.inquiries')}}" class="btn btn--block btn--default">過去に請求した資料一覧</a>
+            <div class="block-inquiries-bottom"><a href="{{route('user.inquiries')}}" class="btn btn--block btn--default">過去に請求した資料一覧</a></div>
         </div>
     </section>
 </div>

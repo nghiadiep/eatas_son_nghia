@@ -582,11 +582,98 @@ textarea{
     }
   }
 @media (min-width: 768px){
+    .block-alert{
+        padding: 17px 27px;
+        margin-bottom: 30px !important;
+    }
+    .block-alert__title{
+        font-size: 18px;
+        >span::before{
+            width: 34px;
+            height: 30px;
+        }
+    }
+    .block-alert__list{
+        >li{
+            font-size: 14px;
+            margin-bottom: 15px;
+            padding-left: 24px;
+        }
+    }
+    .group-radio-list{
+        font-size: 18px;
+    }
+    .btn-size-m{
+        min-width: 300px !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .form-group-btn{
+        text-align: center;
+        .btn{
+            min-width: 300px;
+        }
+    }
     .form-group{
         margin-bottom: 33px;
     }
     .form-control, .select-group label, .input-group{
         height: 40px;
         font-size: 18px;
+    }
+    .block-form{
+        &__member-info{
+            text-align: center;
+            margin: 20px 0;
+            .btn{
+                min-width: 300px;
+            }
+        }
+        &__notice{
+            font-size: 18px;
+        }
+        &__header{
+            text-align: center;
+            .btn{
+                width: 300px;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &__btn-list{
+             .btn{
+                padding-top: 0;
+                padding-bottom: 0;
+                display: flex !important;
+                line-height: 18px;
+                justify-content: center;
+                align-items: center;
+             }
+        }
+    }
+    .checkbox-group{
+        >label{
+            &.term-label{
+                height: auto;
+                min-height: 45px;
+                >span{
+                    padding-top: 10px;
+                    min-height: 45px;
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+            >span{
+                padding-left: 70px;
+                &:before{
+                    left: 18px;
+                    margin-top: -13px;
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+        }
     }
 }
