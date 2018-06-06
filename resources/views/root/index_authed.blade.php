@@ -5,76 +5,16 @@
 @include("component.part.slideshow", ["url" => route('api.articles.tops')])
 <div class="content-center">
     <div class="block-bg-gray">
-        <section class="article-readlater">
+        <section class="article-readlater" id="clips-list">
             <h2 class="section-title"><span>あとで読むに入っている記事</span></h2>
+            <div v-if="clips.length > 0">
+            <!-- Begin Code here put inside id "clips-list" -->
             <div class="slider-readlater">
-                <div class="slider-readlater__item">
-                    <a href="#">
-                        <div class="slider-readlater__window">
-                            <img src="{{asset('images/slider_read_later.png')}}" alt="カテゴリ1">
-                        </div>
-                        <div class="slider-readlater__des">
-                            <p class="slider-readlater__cat"><span>カテゴリ1</span></p>
-                            <h3 class="slider-readlater__title">記事タイトル記事タイトル記事タイトル記事タイトル記事</h3>
-                        </div>
-                    </a>
+                <div class="slider-readlater__item" v-for="clip in clips">
+                    <clip-chip-slider v-bind:clip="clip" v-bind:authed="true" />
                 </div>
-                <div class="slider-readlater__item">
-                    <a href="#">
-                        <div class="slider-readlater__window">
-                            <img src="{{asset('images/slider_read_later.png')}}" alt="カテゴリ1">
-                        </div>
-                        <div class="slider-readlater__des">
-                            <p class="slider-readlater__cat"><span>カテゴリ1</span></p>
-                            <h3 class="slider-readlater__title">記事タイトル記事タイトル記事タイトル記事タイトル記事</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="slider-readlater__item">
-                    <a href="#">
-                        <div class="slider-readlater__window">
-                            <img src="{{asset('images/slider_read_later.png')}}" alt="カテゴリ1">
-                        </div>
-                        <div class="slider-readlater__des">
-                            <p class="slider-readlater__cat"><span>カテゴリ1</span></p>
-                            <h3 class="slider-readlater__title">記事タイトル記事タイトル記事タイトル記事タイトル記事</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="slider-readlater__item">
-                    <a href="#">
-                        <div class="slider-readlater__window">
-                            <img src="{{asset('images/slider_read_later.png')}}" alt="カテゴリ1">
-                        </div>
-                        <div class="slider-readlater__des">
-                            <p class="slider-readlater__cat"><span>カテゴリ1</span></p>
-                            <h3 class="slider-readlater__title">記事タイトル記事タイトル記事タイトル記事タイトル記事</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="slider-readlater__item">
-                    <a href="#">
-                        <div class="slider-readlater__window">
-                            <img src="{{asset('images/slider_read_later.png')}}" alt="カテゴリ1">
-                        </div>
-                        <div class="slider-readlater__des">
-                            <p class="slider-readlater__cat"><span>カテゴリ1</span></p>
-                            <h3 class="slider-readlater__title">記事タイトル記事タイトル記事タイトル記事タイトル記事</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="slider-readlater__item">
-                    <a href="#">
-                        <div class="slider-readlater__window">
-                            <img src="{{asset('images/slider_read_later.png')}}" alt="カテゴリ1">
-                        </div>
-                        <div class="slider-readlater__des">
-                            <p class="slider-readlater__cat"><span>カテゴリ1</span></p>
-                            <h3 class="slider-readlater__title">記事タイトル記事タイトル記事タイトル記事タイトル記事</h3>
-                        </div>
-                    </a>
-                </div>
-
+            </div>
+            <!-- End Code here put inside id "clips-list" -->
             </div>
         </section>
         <div class="current-point">
@@ -93,7 +33,7 @@
         <h2 class="block-home-list__title"><span>新着記事</span></h2>
         <div class="block-home-blog__inner">
             <div v-for="article in articles">
-                <article-cell v-bind:article="article" :authed="false" />
+                <article-cell @clip-event="onReloadClip" v-bind:article="article" :authed="true" />
             </div>
             
         </div>
@@ -101,21 +41,55 @@
 </div>
 
 <script type="text/javascript">
-
+window.onload=function(){
+    if(window.jQuery){
+        $('.block-home-blog__footer__btn-read-later').on('click', function(){
+            if($('.slider-readlater').hasClass('slick-initialized')){
+                $('.slider-readlater').slick('unslick');    
+            }
+        });
+    }
+}
 document.addEventListener('DOMContentLoaded', function() {
+    
 
     let clipVue = new Vue( {
         el: '#clips-list',
         data: {
             clips: [],
+            pagesize:100,
+            slick:{
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                responsive: [
+                    {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+            }
         },
         mounted: function() {
             this.readMore();
         },
+        updated: function() {
+            if($('.slider-readlater').hasClass('slick-initialized')){
+                $('.slider-readlater').slick('unslick');
+            }
+            $('.slider-readlater').slick(this.slick);
+            console.log('updated!');
+        },
         methods: {
             readMore: function() {
                 var self = this;
-                axios.get("{{route('api.user.clips')}}").then( function( res ) {
+                axios.get("{{route('api.user.clips')}}?pagesize="+this.pagesize).then( function( res ) {
                     self.clips = res.data.data;
                 }).catch( function( res ) {
                     console.error( res );
@@ -157,24 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
     });
-    /******UPDATED 15/05/2018****/
-        $('.slider-readlater').slick({
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          dots: false,
-          responsive: [
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            }
-          ]
-        });
+    
 });
                 
 </script>

@@ -25,6 +25,14 @@ Vue.component('sns', require('./components/SNS.vue'));
 Vue.component('inquiry-document', require('./components/InquiryDocument.vue'));
 Vue.component('clip-chip', require('./components/ClipChip.vue'));
 
+/**
+Code here
+ */
+Vue.component('clip-chip-slider', require('./components/ClipChipSlider.vue'));
+/**
+Code here
+ */
+
 Vue.component('stock-chip', require('./components/StockChip.vue'));
 
 require('./util');
