@@ -17,7 +17,6 @@
             -ms-background-size: cover;
             -moz-background-size: cover;
             background-size: cover;
-
             &__window {
                 max-width: 100%;
                 width: 100%;
@@ -70,7 +69,7 @@
                     }
                 }
                 &__summary {
-                    display:none;
+                    display: none;
                 }
             }
         }
@@ -120,25 +119,25 @@
         position: relative;
         margin-left: -150px;
         margin-right: -150px;
-        &:after{
-            content:"";
+        &:after {
+            content: "";
             position: absolute;
             top: 0;
             right: 0;
             width: calc(50% - 360px);
             height: 423px;
-            z-index:1;
-            background: rgba(#000,0.7);
+            z-index: 1;
+            background: rgba(#000, 0.7);
         }
-        &:before{
-            content:"";
+        &:before {
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: calc(50% - 360px);
             height: 423px;
-            z-index:1;
-            background: rgba(#000,0.7);
+            z-index: 1;
+            background: rgba(#000, 0.7);
         }
         &__slider-main {
             &__item {
@@ -171,10 +170,10 @@
             cursor: pointer;
             z-index: 100;
         }
-        .slick-prev{
+        .slick-prev {
             left: -40px;
         }
-        .slick-next{
+        .slick-next {
             right: -40px;
         }
         .slick-list,
@@ -188,67 +187,70 @@
                     content: none;
                     z-index: -1;
                 }
-                .mainvisual__slider-main__item__des {
-                }
+                .mainvisual__slider-main__item__des {}
             }
         }
-        .slick-dots{
-            top:auto;
+        .slick-dots {
+            top: auto;
             bottom: -50px;
         }
-
-    /***Description***/
-    .article-des {
-        padding: 20px 10px 20px !important;
-        h2{
-            left:0;
-            >span{
+        /***Description***/
+        .article-des {
+            padding: 20px 10px 20px !important;
+            h2 {
+                left: 0;
+                >span {
+                    font-size: 14px;
+                    min-width: 95px;
+                    text-align: center;
+                    padding-left: 22px;
+                    padding-right: 22px;
+                }
+            }
+            &__title {
+                font-size: 26px;
+                line-height: 1.2;
+                font-weight: bold;
+                color: #001c25;
+                margin-bottom: 18px;
+                @include cutrow(2);
+                &:before {
+                    content: none;
+                }
+            }
+            &__summary {
+                display: block;
                 font-size: 14px;
-                min-width: 95px;
-                text-align: center;
-                padding-left: 22px;
-                padding-right: 22px;
+                line-height: 21px;
+                @include cutrow(3);
+                height: 63px;
             }
         }
-        &__title {
-            font-size: 26px;
-            line-height: 1.2;
-            font-weight: bold;
-            color: #001c25;
-            margin-bottom: 18px;
-            @include cutrow(2);
-            &:before {
-                content: none;
-            }
-        }
-        &__summary {
-            display: block;
-            font-size: 14px;
-            line-height: 21px;
-            @include cutrow(3);
-        }
-    }
-    /***End Description***/
+        /***End Description***/
     }
 }
 
 @media (max-width: 980px) {
-    .mainvisual{
+    .mainvisual {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 }
-@media (max-width: 767px){
-    .mainvisual{
-        &:after,&:before{
-            content:none;
+
+@media (max-width: 767px) {
+    .mainvisual {
+        &:after,
+        &:before {
+            content: none;
         }
     }
-    .mainvisual .slick-next, .mainvisual .slick-prev{
+    .mainvisual .slick-next,
+    .mainvisual .slick-prev {
         @include background-size(auto 100%);
     }
 }
+
 @media (max-width: 640px) {
     .mainvisual {
         .slick-next,
