@@ -97,6 +97,7 @@
     }
     .slider-readlater__title{
         font-size: 14px;
+        @include cutrow(3);
     }
 }
 
