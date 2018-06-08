@@ -340,8 +340,8 @@
                 width: 60px;
                 height: 60px;
                 position: relative;
-                top: -6px;
-                left: -1px;
+                top: -5px;
+                left: 0px;
                 background: url(../images/icon_stock.png) no-repeat center center;
                 @include background-size(100% 100%)
             }
@@ -364,8 +364,8 @@
                 width: 60px;
                 height: 60px;
                 position: relative;
-                top: -6px;
-                left: -1px;
+                top: -5px;
+                left: 0px;
             }
             &--active {
                 background: $darkBlue;

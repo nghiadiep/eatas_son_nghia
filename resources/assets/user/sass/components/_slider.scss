@@ -44,6 +44,7 @@
     }
     &__title {
         font-size: 20px;
+        @include cutrow(3);
     }
     /***BUTON  NEXT AND PREV***/
     .slick-prev,
@@ -72,7 +73,6 @@
 @media (min-width: 767px) {
     .article-readlater {
         margin-bottom: 60px;
-        
     }
     
     .slider-readlater{
@@ -97,7 +97,6 @@
     }
     .slider-readlater__title{
         font-size: 14px;
-        @include cutrow(3);
     }
 }
 

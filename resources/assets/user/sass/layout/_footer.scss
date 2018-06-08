@@ -288,6 +288,7 @@
                 ul>li {
                     line-height: get-vw(640, 14);
                     a {
+                        white-space: nowrap;
                         font-size: get-vw(640, 14);
                         &:before {
                             margin-right: get-vw(640, 6);

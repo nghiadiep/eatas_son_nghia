@@ -3,7 +3,7 @@
     .header {
         height: 30px;
         &__middle {
-            height: 30px;
+            height: 40px;
             background: #fff;
             position: fixed;
             width: 100%;
@@ -16,14 +16,14 @@
                 margin: 0 auto;
                 &__btn-menu {
                     float: right;
-                    width: 30px;
-                    height: 30px;
+                    width: 40px;
+                    height: 40px;
                     background: #f1f5f8;
                     text-align: center;
                     font-size: 8px;
                     color: $darkBlue;
                     position: relative;
-                    padding: 9px 8px 5px;
+                    padding: 13px 13px 5px;
                     >label {
                         display: none;
                     }
@@ -50,8 +50,8 @@
                     }
                     label {
                         display: block;
-                        width: 30px;
-                        height: 30px;
+                        width: 40px;
+                        height: 40px;
                         background: url(../images/btn_search.png) no-repeat;
                         background-size: 100% 100%;
                     }
@@ -62,20 +62,20 @@
                     margin-top: 5px;
                     text-align: center;
                     img {
-                        height: 20px;
+                        height: 30px;
                     }
                 }
                 %btn-user {
                     float: right;
-                    width: 30px;
-                    height: 30px;
+                    width: 40px;
+                    height: 40px;
                     text-align: center;
                     font-size: 8px;
                     letter-spacing: -1px;
                     a {
                         display: block;
-                        height: 30px;
-                        width: 30px;
+                        height: 40px;
+                        width: 40px;
                         padding-top: 0;
                         font-size: 0;
                         text-decoration: none;
@@ -107,7 +107,7 @@
     .nav-header-menu {
         overflow: auto;
         position: fixed;
-        top: 30px;
+        top: 40px;
         right: 0;
         z-index: 999;
         width: 100%;
@@ -685,7 +685,7 @@
                             display: table-cell;
                             width: 40%;
                             vertical-align: middle;
-                            padding: 7px 0;
+                            padding: 12px 0;
                             p {
                                 color: #ffffff;
                                 font-size: 13px;
