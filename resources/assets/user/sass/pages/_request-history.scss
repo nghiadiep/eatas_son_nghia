@@ -210,16 +210,18 @@
 	        	& .item-box__date {
 					font-size: 18px;
 				    padding: 0 10px;
+				    background: #eff4f7;
 				    & .text {
 				    	line-height: 45px;
+				    	color: #001925;
 				    }
 				    & .date {
 				    	line-height: 45px;
-				    	font-size: 10px;
+				    	font-size: 14px;
 				    }
 	        	}
 	        	& .item-box__company {
-	        		margin-top: 50px;
+	        		margin-top: 20px;
 					& .item-box__name {
 						font-size: 18px;
 						& .des {
@@ -234,13 +236,28 @@
 	        	& .clearfix {
 	        		margin-bottom: 20px;
 	        	}
+	        	&:after{
+	        		content:"";
+	        		display: block;
+	        		clear: both;
+	        	}
 				& .btn {
-					width: 100%;
+					width: calc(50% - 10px);
+					float: left;
 					font-size: 14px;
 					line-height: 22px;
-					margin-bottom: 0;
 					padding-right: 20px;
 					padding-left: 20px;
+					margin-bottom: 20px;
+					&:hover{
+						opacity: 0.7;
+					}
+					&:nth-child(2n){
+						float: right;
+					}
+					&:nth-child(2n+1){
+						clear: both;
+					}
 			        & span:last-child {
 			        	font-weight: bold;
 		        	    font-size: 18px;
