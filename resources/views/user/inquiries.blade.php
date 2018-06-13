@@ -6,6 +6,7 @@
         <div class="item-box-list item-box--requesthistory request-history-page">
             <ul>
                 @foreach($inquiries as $inquiry)
+                @if(count($inquiry->product->inquiryDocuments))
                 <li>
                     <div class="item-box">
                         <div class="item-box__content">
@@ -41,6 +42,7 @@
                     </div>
                     <!-- /.item-box -->
                 </li>
+                @endif
                 @endforeach
             </ul>
             <nav>
