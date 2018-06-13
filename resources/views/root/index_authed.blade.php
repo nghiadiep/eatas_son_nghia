@@ -51,8 +51,19 @@ window.onload=function(){
     }
 }
 document.addEventListener('DOMContentLoaded', function() {
-    
-
+    /* Move PC point html structure to SP */
+    var $sidebarPoint  = $('.sidebar-point');
+    var $usageEatas = $('.block-usage-eatas');
+    $(window).on('load resize', function(){
+        if($(window).width()<768){
+            if($sidebarPoint.length>0 && $('.b-point-content').length<=0){
+                $sidebarPoint.parent('.sidebar__box').insertBefore($usageEatas).addClass('b-point-content');
+            }
+        }else{
+            $('.sidebar').prepend($sidebarPoint.parent('.sidebar__box').detach());
+            $sidebarPoint.parent('.sidebar__box').removeClass('b-point-content');
+        }
+    });
     let clipVue = new Vue( {
         el: '#clips-list',
         data: {
@@ -84,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 $('.slider-readlater').slick('unslick');
             }
             $('.slider-readlater').slick(this.slick);
-            console.log('updated!');
+            $('.slider-readlater__title').css({'width':'100%'});
         },
         methods: {
             readMore: function() {
