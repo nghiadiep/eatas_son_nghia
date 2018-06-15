@@ -4,6 +4,7 @@
     <h2 class="page-title">資料請求履歴</h2>
     <div class="content-center">
         <div class="item-box-list item-box--requesthistory request-history-page">
+        @if(count($inquiries))
             <ul>
                 @foreach($inquiries as $inquiry)
                 @if(count($inquiry->product->inquiryDocuments))
@@ -56,6 +57,9 @@
                     <li><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 </ul>
             </nav>
+            @else
+            <p style="font-size:18px; text-align: center;">資料請求履歴はありません</p>
+            @endif
         </div>
     </div>
 </div>
