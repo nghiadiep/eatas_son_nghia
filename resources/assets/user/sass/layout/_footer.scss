@@ -167,7 +167,7 @@
     &__bottom {
         .table {
             padding-top: 0px;
-            padding-bottom: 71px;
+            padding-bottom: 0px;
         }
         .bottom {
             &__copyright {
@@ -227,6 +227,7 @@
     .footer {
         margin-top: 84px;
         position: fixed;
+        padding-bottom: 20px;
         .bottom__copyright {
             p {
                 text-align: left;

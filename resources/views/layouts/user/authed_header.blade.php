@@ -1,6 +1,6 @@
 @inject("categoryService", App\Services\CategoryService)
 @inject("tagService", App\Services\TagService)
-<header class="header">
+<header class="header" id="authed_header">
     <div class="pc">
         <input id="modal-search-input-pc" type="checkbox" class="nav-unshown" data-toggle="nav-mod-search">
         <div class="wrapper_fixed">
@@ -44,13 +44,13 @@
                                 <a href="{{route('root.index')}}"><img src="{{asset('images/logo_pc.png')}}" alt="EATAS"></a>
                             </div>
                             <div class="search__search-container">
-                                <input type="text" name="search-word" id="search-word">
+                                <input type="text" class="search-words" v-model="searchword" id="search-word">
                                 <label for="modal-search-input-pc"><div class="drop-down"><span>詳細検索</span> <i class="fa fa-sort-down"></i></div></label>
                             </div>
                             <div class="search__search-button-container">
-                                <div class="outer"><a href="">
-                                    <img src="{{asset('images/btn_search_pc.png')}}" alt="Search button">
-                                </a></div>
+                                <div class="outer">
+                                    <img src="{{asset('images/btn_search_pc.png')}}" alt="Search button" @click="submitForm">
+                                </div>
                             </div>
                         </div>
                         <div class="middle__contact contact clearfix">
@@ -71,12 +71,12 @@
                         <div class="wrapper">
                             <p>
                                 <span>検索ワード：</span>
-                                <a href=""><span class="tag">インバウンド</span></a>
-                                <a href=""><span class="tag">豆知識</span></a>
-                                <a href=""><span class="tag">採用</span></a>
-                                <a href=""><span class="tag">集客</span></a>
-                                <a href=""><span class="tag">接客</span></a>
-                                <a href=""><span class="tag">オーダーシステム</span></a>
+                                <a href="" @click="keywordClick"><span class="tag">インバウンド</span></a>
+                                <a href="" @click="keywordClick"><span class="tag">豆知識</span></a>
+                                <a href="" @click="keywordClick"><span class="tag">採用</span></a>
+                                <a href="" @click="keywordClick"><span class="tag">集客</span></a>
+                                <a href="" @click="keywordClick"><span class="tag">接客</span></a>
+                                <a href="" @click="keywordClick"><span class="tag">オーダーシステム</span></a>
                             </p>
                         </div>
                 </div>
@@ -86,8 +86,11 @@
         <label class="modal-search-close" for="modal-search-input-pc"></label>
         <div class="modal-search-pc">
             <div class="modal-search-pc__inner">
-                <form action="{{route('articles.search')}}" method="GET">
-                    
+                <form action="{{route('articles.search')}}" method="GET" ref="form">
+                    <div class="modal-search__form-group01">
+                        <input type="text" name="freeword" placeholder="検索する言葉" class="search-words" :value="searchword" style="display:none;">
+                        <button class="modal-search__btn-search" style="display:none;" >検索する</button>
+                    </div>
                     <section>
                         <h2 class="modal-search-pc__title">
                             <span>詳細検索</span>
@@ -192,19 +195,31 @@
     <div class="nav-header-menu">
         <ul>
             <li>
-                <a onclick="onAuthedAction()">あとで読む一覧</a>
+                <a href="{{route('user.inquiries')}}" title="資料請求履歴">資料請求履歴</a>
             </li>
             <li>
-                <a onclick="onAuthedAction()">本棚を見る</a>
+                <a href="{{route('user.stocks')}}" title="本棚を見る">本棚を見る</a>
             </li>
             <li>
-                <a href="{{route('root.faq')}}">良くある質問</a>
+                <a href="{{route('user.clips')}}" title="あとで読むを見る">あとで読むを見る</a>
             </li>
             <li>
-                <a href="{{route('contact.add')}}">お問い合わせ</a>
+                <a href="{{route('user.edit')}}" title="会員情報確認・編集">会員情報確認・編集</a>
             </li>
             <li>
-                <a href="{{route('root.notices')}}">お知らせ</a>
+                <a href="{{route('point-history')}}" title="ポイント詳細">ポイント詳細</a>
+            </li>
+            <li class="logout">
+                <form action="{{route('user.logout')}}" method="POST">
+                    {{ csrf_field() }}
+                    <button title="ログアウト">ログアウト</button>
+                </form>
+            </li>
+            <li>
+                <a href="{{route('contact.add')}}" title="お問い合わせ">お問い合わせ</a>
+            </li>
+            <li>
+                <a href="{{route('root.notices')}}" title="お知らせ">お知らせ</a>
             </li>
         </ul>
     </div>
@@ -280,3 +295,25 @@
     </div>
 </header>
 
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    let searchVue = new Vue( {
+        el: '#authed_header',
+        data: {
+            searchword: ''
+        },
+        methods: {
+            submitForm() {
+                this.$refs.form.submit();
+            },
+            keywordClick(e) {
+                e.preventDefault();
+                this.searchword = e.target.innerHTML;
+                this.$nextTick(() => {
+                    this.submitForm();
+                });
+            }
+        }
+    });
+});
+</script>

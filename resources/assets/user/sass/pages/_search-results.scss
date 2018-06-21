@@ -169,6 +169,7 @@
 			input {
 				height: 44px;
 				min-height: 44px;
+				font-family: "Hiragino Kaku Gothic Std W6", ヒラギノ角ゴ Std W6, メイリオ, Meiryo, sans-serif;
 			}
 		}
 		&__search-button {
@@ -179,7 +180,8 @@
 				height: 44px;
 				min-height: 44px;
 				position: relative;
-    			top: -1px;
+				top: -1px;
+				font-family: "Hiragino Kaku Gothic Std W6", ヒラギノ角ゴ Std W6, メイリオ, Meiryo, sans-serif;
 			}
 		}
 		&__search-advance {
@@ -190,8 +192,50 @@
 				height: 44px;
 				min-height: 44px;
 				position: relative;
-    			top: -1px;
+				top: -1px;
+				font-family: "Hiragino Kaku Gothic Std W6", ヒラギノ角ゴ Std W6, メイリオ, Meiryo, sans-serif;
 			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.search-result-page {
+		.item-list .block-option.btn-action .btn-read-later {
+			width: 42px;
+			height: 42px;
+			border-radius: 3px;
+			padding-top: 0px;
+			margin: 0 auto;
+		}
+		.item-list .block-option.btn-action .btn-read-later:before {
+			position: relative;
+			top: 1px;
+			left: 1px;
+			width: 40px;
+			height: 40px;
+			margin: 0px;
+		}
+		.item-list .block-option.btn-action .btn-bookshelf:before {
+			position: relative;
+			top: 1px;
+			left: 1px;
+			width: 40px;
+			height: 40px;
+			margin: 0px;
+		}
+		.item-list .block-option.btn-action .btn-bookshelf {
+			width: 42px;
+			height: 42px;
+			border-radius: 3px;
+			padding-top: 0px;
+			margin: 0 auto;
+		}
+		.item-list .block-option.btn-action li {
+			width: 50%;
+			height: auto;
+			float: left;
+    		margin: 0px;
 		}
 	}
 }

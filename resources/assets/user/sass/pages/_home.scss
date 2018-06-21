@@ -728,6 +728,12 @@
             margin-bottom: 15px;
             height: auto;
             @include cutrow(2);
+            h2 {
+                height: 40px;
+            }
+        }
+        &__des {
+            height: 142px;
         }
         &__txt {
             font-size: 13px;
